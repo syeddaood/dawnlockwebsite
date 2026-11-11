@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="dl-sun" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4C969" />
+      <stop offset="1" stop-color="#E8742F" />
+    </linearGradient>
+  </defs>
+  <circle cx="16" cy="16" r="16" fill="#15121D" />
+  <path d="M16 4a12 12 0 1 0 11.5 15.5A9.5 9.5 0 0 1 16 4Z" fill="#F7F3ED" opacity="0.9" />
+  <circle cx="19.5" cy="18" r="6.5" fill="url(#dl-sun)" />
+</svg>
