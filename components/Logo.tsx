@@ -7,19 +7,43 @@ export default function Logo({ size = 28 }: { size?: number }) {
       fill="none"
       aria-hidden="true"
     >
-      <defs>
-        <linearGradient id="dl-sun" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="#F4C969" />
-          <stop offset="1" stopColor="#E8742F" />
-        </linearGradient>
-      </defs>
-      <circle cx="16" cy="16" r="15" fill="#15121D" stroke="#2A2635" />
+      {/* progress ring: long orange arc (wake streak) + slate arc, split by a mint marker dot */}
       <path
-        d="M16 4a12 12 0 1 0 11.5 15.5A9.5 9.5 0 0 1 16 4Z"
-        fill="#F7F3ED"
-        opacity="0.9"
+        d="M15.56 3.51 A12.5 12.5 0 1 1 3.87 19.02"
+        stroke="#FFB547"
+        strokeWidth="3.2"
+        strokeLinecap="round"
       />
-      <circle cx="19.5" cy="18" r="6.5" fill="url(#dl-sun)" />
+      <path
+        d="M3.87 12.98 A12.5 12.5 0 0 1 15.13 3.53"
+        stroke="#9290AB"
+        strokeWidth="3.2"
+        strokeLinecap="round"
+      />
+      <circle cx="3.5" cy="16" r="2.2" fill="#5EE6B0" />
+
+      {/* crescent moon */}
+      <path
+        d="M17 9a8 8 0 1 0 7.7 10.3A6.3 6.3 0 0 1 17 9Z"
+        fill="#FFF3D6"
+      />
+      {/* zzz */}
+      <path
+        d="M22.6 9.6h3.4l-3.4 3.4h3.4"
+        stroke="#FFF3D6"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      <path
+        d="M24.6 13.6h2.3l-2.3 2.3h2.3"
+        stroke="#FFF3D6"
+        strokeWidth="0.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
     </svg>
   );
 }
