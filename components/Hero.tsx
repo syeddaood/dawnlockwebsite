@@ -37,6 +37,15 @@ export default function Hero() {
           Commitment device, not an app feature
         </motion.span>
 
+        <motion.p
+          initial={reduce ? false : { opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.07 }}
+          className="mt-4 text-step-0 font-semibold tracking-tight text-gold"
+        >
+          Solve it. Play it. Beat it. Get up!
+        </motion.p>
+
         <motion.h1
           initial={reduce ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
