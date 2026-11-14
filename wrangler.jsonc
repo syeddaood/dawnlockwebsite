@@ -15,6 +15,10 @@
       "id": "d19fcd32cabf4f9198c01e1c7a5ec54f"
     }
   ],
+  "routes": [
+    { "pattern": "cukkoo.app", "custom_domain": true },
+    { "pattern": "www.cukkoo.app", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   }
