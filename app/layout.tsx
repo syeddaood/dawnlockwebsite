@@ -1,24 +1,45 @@
 import type { Metadata } from "next";
 import { display, sans, mono } from "@/lib/fonts";
 import ScrollProgress from "@/components/ScrollProgress";
+import StructuredData from "@/components/StructuredData";
 import "./globals.css";
+
+const TITLE = "Cukkoo: Alarm Clock App for Heavy Sleepers (No Snooze)";
+const DESCRIPTION =
+  "Cukkoo is the Android alarm clock app that locks itself and won't stop ringing until you solve a real wake-up mission — math, typing, memory, shake, or photo. No snooze, no dismiss button, no excuses.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cukkoo.app"),
-  title: "Cukkoo — Solve it. Play it. Beat it. Get up!",
-  description:
-    "Cukkoo is a commitment device, not just an alarm. No snooze, no dismiss button, and once it's close to firing it locks itself — only a real wake-up mission stops the ring.",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: [
+    "alarm clock app for heavy sleepers",
+    "alarm app no snooze",
+    "math alarm clock app",
+    "alarm clock app that forces you to wake up",
+    "wake up mission alarm app",
+    "commitment device alarm app",
+    "android alarm app that can't be turned off",
+    "alarm clock with challenges to turn off",
+  ],
+  alternates: {
+    canonical: "https://cukkoo.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Cukkoo — Solve it. Play it. Beat it. Get up!",
-    description:
-      "No snooze, no dismiss, no editing it away. Only a real wake-up mission stops the ring.",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "https://cukkoo.app",
+    siteName: "Cukkoo",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cukkoo — Solve it. Play it. Beat it. Get up!",
-    description:
-      "No snooze, no dismiss, no editing it away. Only a real wake-up mission stops the ring.",
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 
@@ -30,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
+        <StructuredData />
         <a href="#main" className="skip-link">
           Skip to content
         </a>
