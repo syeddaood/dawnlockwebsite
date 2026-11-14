@@ -1,4 +1,4 @@
-# DawnLock — Design Brief
+# Cukkoo — Design Brief
 
 **Concept:** A sunrise you commit to, not snooze through. The site itself moves from night
 toward dawn as you scroll, mirroring the app's actual promise: the only way out is through.
@@ -48,7 +48,7 @@ section reveals (450–700ms, `ease-out`/spring).
   metaphor and mirrors the app's own predominantly dark UI. Forcing a conventional light mode
   would dilute the one thing this brand has to say visually. Documented here as a deliberate
   call, not an oversight against the usual "both modes" guidance.
-- **No testimonials section.** DawnLock is pre-launch; there are no real users to quote yet.
+- **No testimonials section.** Cukkoo is pre-launch; there are no real users to quote yet.
   Per the no-fabricated-testimonials rule, the site omits this section entirely rather than
   shipping a placeholder that reads as fake. Add it once real quotes exist.
 - **No invented stats.** The "Problem" section deliberately uses relatable excuses and the
@@ -73,4 +73,4 @@ section reveals (450–700ms, `ease-out`/spring).
 ## Source material
 
 All eight in-app screenshots and the hero copy/colors were pulled from the Figma file
-"DawnLock — App Showcase" and downloaded into `public/app-shots/`.
+"Cukkoo — App Showcase" and downloaded into `public/app-shots/`.

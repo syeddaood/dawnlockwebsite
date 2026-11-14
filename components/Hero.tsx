@@ -53,7 +53,7 @@ export default function Hero() {
             className="mt-6 max-w-md text-step-1 text-ink-dim"
           >
             No snooze, no dismiss — only a real wake-up mission stops the
-            ring. DawnLock removes the escape hatches you reach for at 6am,
+            ring. Cukkoo removes the escape hatches you reach for at 6am,
             while you&apos;re still too groggy to be trusted.
           </motion.p>
 

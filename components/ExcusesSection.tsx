@@ -39,7 +39,7 @@ export default function ExcusesSection() {
           </h2>
           <p className="mt-4 text-step-0 text-ink-dim">
             Every excuse for not waking up is one you&apos;ve already used.
-            DawnLock was built by closing each one, on purpose.
+            Cukkoo was built by closing each one, on purpose.
           </p>
         </Reveal>
 

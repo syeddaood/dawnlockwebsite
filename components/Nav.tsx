@@ -39,7 +39,7 @@ export default function Nav() {
       >
         <a href="#top" className="flex items-center gap-2 font-display font-bold text-ink">
           <Logo size={26} />
-          DawnLock
+          Cukkoo
         </a>
 
         <ul className="hidden items-center gap-7 md:flex">

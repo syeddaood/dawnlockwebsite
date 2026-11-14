@@ -23,12 +23,12 @@ const FAQS = [
     a: "No. Any camera or microphone data used to verify a mission is processed entirely on your device and is never uploaded, logged, or seen by analytics.",
   },
   {
-    q: "What platforms does DawnLock support?",
-    a: "DawnLock is built for Android, where we can engineer the deep, reliable alarm scheduling this concept depends on.",
+    q: "What platforms does Cukkoo support?",
+    a: "Cukkoo is built for Android, where we can engineer the deep, reliable alarm scheduling this concept depends on.",
   },
   {
     q: "When can I get it?",
-    a: "DawnLock is pre-launch. Join the waitlist and you'll be among the first to get early access.",
+    a: "Cukkoo is pre-launch. Join the waitlist and you'll be among the first to get early access.",
   },
 ];
 

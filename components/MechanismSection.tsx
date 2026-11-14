@@ -74,7 +74,7 @@ export default function MechanismSection() {
                 >
                   <Image
                     src={STEPS[active].image}
-                    alt={`DawnLock app screen: ${STEPS[active].title}`}
+                    alt={`Cukkoo app screen: ${STEPS[active].title}`}
                     fill
                     sizes="280px"
                     className="object-cover"

@@ -46,7 +46,7 @@ export default function ProgressSection() {
                 <div className="relative aspect-[280/607] w-[200px] overflow-hidden rounded-[1.8rem] border border-white/10 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.55)]">
                   <Image
                     src={shot.image}
-                    alt={`DawnLock app screen: ${shot.title}`}
+                    alt={`Cukkoo app screen: ${shot.title}`}
                     fill
                     sizes="200px"
                     className="object-cover"

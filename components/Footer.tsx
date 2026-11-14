@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <Logo size={24} />
           <div>
-            <p className="font-display font-bold text-ink">DawnLock</p>
+            <p className="font-display font-bold text-ink">Cukkoo</p>
             <p className="text-step--1 text-muted">
               The alarm clock that doesn&apos;t let you win.
             </p>
@@ -30,7 +30,7 @@ export default function Footer() {
         </nav>
 
         <p className="text-step--1 text-muted">
-          © {new Date().getFullYear()} DawnLock. Built for Android.
+          © {new Date().getFullYear()} Cukkoo. Built for Android.
         </p>
       </div>
     </footer>
