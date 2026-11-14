@@ -12,8 +12,7 @@
   "kv_namespaces": [
     {
       "binding": "WAITLIST_KV",
-      // Replace with the id printed by: npx wrangler kv namespace create WAITLIST_KV
-      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+      "id": "d19fcd32cabf4f9198c01e1c7a5ec54f"
     }
   ],
   "observability": {
