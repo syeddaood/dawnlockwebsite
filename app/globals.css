@@ -106,3 +106,20 @@ button {
 .tabular {
   font-variant-numeric: tabular-nums;
 }
+
+/* decorative floating bob for the hero mission-icon tiles, compositor-driven (not JS) */
+@keyframes tile-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.tile-float {
+  animation-name: tile-float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
