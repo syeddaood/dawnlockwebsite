@@ -1,18 +1,7 @@
 import { NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import { getCloudflareContext } from "@opennextjs/cloudflare";
 
-const DATA_FILE = path.join(process.cwd(), "data", "waitlist.json");
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-async function readEntries(): Promise<string[]> {
-  try {
-    const raw = await fs.readFile(DATA_FILE, "utf-8");
-    return JSON.parse(raw) as string[];
-  } catch {
-    return [];
-  }
-}
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -31,12 +20,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Enter a valid email address." }, { status: 400 });
   }
 
-  const entries = await readEntries();
-  if (!entries.includes(email)) {
-    entries.push(email);
-    await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
-    await fs.writeFile(DATA_FILE, JSON.stringify(entries, null, 2));
-  }
+  const { env } = getCloudflareContext();
+  await env.WAITLIST_KV.put(email, JSON.stringify({ email, joinedAt: new Date().toISOString() }));
 
   return NextResponse.json({ ok: true });
 }

@@ -56,9 +56,9 @@ section reveals (450–700ms, `ease-out`/spring).
   user counts. The Streaks/Garden/Report proof section uses the actual Figma screenshots rather
   than a hand-built chart with made-up data.
 - **Primary CTA is waitlist signup**, per product stage (pre-launch, Android only). The waitlist
-  form posts to `app/api/waitlist/route.ts`, which currently appends to `data/waitlist.json` —
-  **this is a dev-friendly placeholder, not a production data store.** Before shipping, wire it
-  to a real email service (e.g. an ESP) or a database table.
+  form posts to `app/api/waitlist/route.ts`, which stores each signup as a Cloudflare KV entry
+  (binding `WAITLIST_KV`, see `wrangler.jsonc`) — this is deploy-ready for Cloudflare Workers.
+  Signups can still be migrated to a real ESP/CRM later; KV is just the raw capture point.
 - **Logo mark is an original design**, not a pixel-extraction from the app's small in-screenshot
   icon (no clean vector asset was available). It reuses the brand's moon/sun motif deliberately.
 - **No smooth-scroll library (Lenis was removed).** It was in the original plan for a cinematic

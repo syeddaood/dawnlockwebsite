@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cukkoo-website",
+  "main": ".open-next/worker.js",
+  "upload_source_maps": true,
+  "compatibility_date": "2026-11-14",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "WAITLIST_KV",
+      // Replace with the id printed by: npx wrangler kv namespace create WAITLIST_KV
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
