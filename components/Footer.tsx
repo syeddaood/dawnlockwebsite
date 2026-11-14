@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <p className="font-display font-bold text-ink">Cukkoo</p>
             <p className="text-step--1 text-muted">
-              The alarm clock that doesn&apos;t let you win.
+              Solve it. Play it. Beat it. Get up!
             </p>
           </div>
         </div>

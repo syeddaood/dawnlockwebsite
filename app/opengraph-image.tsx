@@ -33,7 +33,7 @@ export default function OpengraphImage() {
           <div style={{ fontSize: 72, fontWeight: 700 }}>Cukkoo</div>
         </div>
         <div style={{ fontSize: 34, color: "#F2B84B", marginTop: 24 }}>
-          The alarm clock that doesn&apos;t let you win.
+          Solve it. Play it. Beat it. Get up!
         </div>
       </div>
     ),

@@ -37,22 +37,13 @@ export default function Hero() {
           Commitment device, not an app feature
         </motion.span>
 
-        <motion.p
-          initial={reduce ? false : { opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.07 }}
-          className="mt-4 text-step-0 font-semibold tracking-tight text-gold"
-        >
-          Solve it. Play it. Beat it. Get up!
-        </motion.p>
-
         <motion.h1
           initial={reduce ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mx-auto mt-5 max-w-2xl text-balance font-display text-step-hero font-bold leading-[0.95] tracking-tight text-ink"
         >
-          The alarm clock that doesn&apos;t let you win.
+          Solve it. Play it. Beat it. Get up!
         </motion.h1>
 
         <motion.p

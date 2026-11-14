@@ -5,18 +5,18 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cukkoo.app"),
-  title: "Cukkoo — The alarm clock that doesn't let you win",
+  title: "Cukkoo — Solve it. Play it. Beat it. Get up!",
   description:
     "Cukkoo is a commitment device, not just an alarm. No snooze, no dismiss button, and once it's close to firing it locks itself — only a real wake-up mission stops the ring.",
   openGraph: {
-    title: "Cukkoo — The alarm clock that doesn't let you win",
+    title: "Cukkoo — Solve it. Play it. Beat it. Get up!",
     description:
       "No snooze, no dismiss, no editing it away. Only a real wake-up mission stops the ring.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cukkoo — The alarm clock that doesn't let you win",
+    title: "Cukkoo — Solve it. Play it. Beat it. Get up!",
     description:
       "No snooze, no dismiss, no editing it away. Only a real wake-up mission stops the ring.",
   },
