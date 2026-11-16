@@ -21,6 +21,13 @@ export const metadata: Metadata = {
     "commitment device alarm app",
     "android alarm app that can't be turned off",
     "alarm clock with challenges to turn off",
+    "alarm clock app for android",
+    "best alarm clock app for android",
+    "Alarmy alternative",
+    "shake to stop alarm app",
+    "reliable alarm app android",
+    "alarm app that forces you out of bed",
+    "alarm app with puzzles",
   ],
   alternates: {
     canonical: "https://cukkoo.app",
