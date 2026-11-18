@@ -48,7 +48,7 @@ export default function PrivacySection() {
           <div className="relative aspect-[280/607] w-[220px] overflow-hidden rounded-[2rem] border border-white/10 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.55)] sm:w-[260px]">
             <Image
               src="/app-shots/settings.png"
-              alt="Cukkoo settings screen listing privacy policy and how Cukkoo works"
+              alt="Cukkoo settings screen showing alarm readiness, advanced alarm settings, and app preferences"
               fill
               sizes="260px"
               className="object-cover"
