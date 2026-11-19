@@ -46,7 +46,7 @@ const MISSIONS = [
 
 export default function MissionShowcase() {
   return (
-    <section id="feature-missions" className="relative bg-bg py-24">
+    <section id="features" className="relative bg-bg py-24">
       <div className="mx-auto max-w-6xl px-5">
         <Reveal className="max-w-2xl">
           <p className="text-step--1 font-semibold uppercase tracking-[0.18em] text-accent">
