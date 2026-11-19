@@ -37,14 +37,9 @@ export default function Hero() {
           Commitment device, not an app feature
         </motion.span>
 
-        <motion.h1
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mx-auto mt-5 max-w-2xl text-balance font-display text-step-hero font-bold leading-[0.95] tracking-tight text-ink"
-        >
+        <h1 className="mx-auto mt-5 max-w-2xl text-balance font-display text-step-hero font-bold leading-[0.95] tracking-tight text-ink">
           Solve it. Play it. Beat it. Get up!
-        </motion.h1>
+        </h1>
 
         <motion.p
           initial={reduce ? false : { opacity: 0, y: 16 }}
@@ -95,16 +90,11 @@ export default function Hero() {
         </motion.ul>
       </div>
 
-      <motion.div
-        initial={reduce ? false : { opacity: 0, scale: 0.94 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        className="relative mt-4 md:mt-0"
-      >
+      <div className="relative mt-4 md:mt-0">
         <MissionIconField>
           <RingingPhoneDemo />
         </MissionIconField>
-      </motion.div>
+      </div>
     </section>
   );
 }
