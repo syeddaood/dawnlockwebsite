@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { display, sans, mono } from "@/lib/fonts";
 import ScrollProgress from "@/components/ScrollProgress";
-import StructuredData from "@/components/StructuredData";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const TITLE = "Cukkoo: Alarm Clock App for Heavy Sleepers (No Snooze)";
@@ -58,12 +59,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
-        <StructuredData />
         <a href="#main" className="skip-link">
           Skip to content
         </a>
         <ScrollProgress />
+        <Nav />
         <main id="main">{children}</main>
+        <Footer />
       </body>
     </html>
   );

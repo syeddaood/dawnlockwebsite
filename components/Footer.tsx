@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -15,18 +16,21 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-          <a href="#mechanism" className="text-step--1 text-ink-dim hover:text-ink">
+          <Link href="/#mechanism" className="text-step--1 text-ink-dim hover:text-ink">
             How it locks
-          </a>
-          <a href="#missions" className="text-step--1 text-ink-dim hover:text-ink">
+          </Link>
+          <Link href="/#missions" className="text-step--1 text-ink-dim hover:text-ink">
             Missions
-          </a>
-          <a href="#proof" className="text-step--1 text-ink-dim hover:text-ink">
+          </Link>
+          <Link href="/features" className="text-step--1 text-ink-dim hover:text-ink">
+            Features
+          </Link>
+          <Link href="/#proof" className="text-step--1 text-ink-dim hover:text-ink">
             Proof
-          </a>
-          <a href="#faq" className="text-step--1 text-ink-dim hover:text-ink">
+          </Link>
+          <Link href="/#faq" className="text-step--1 text-ink-dim hover:text-ink">
             FAQ
-          </a>
+          </Link>
         </nav>
 
         <p className="text-step--1 text-muted">

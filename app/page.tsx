@@ -1,31 +1,27 @@
-import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import ExcusesSection from "@/components/ExcusesSection";
 import MechanismSection from "@/components/MechanismSection";
 import MissionsGrid from "@/components/MissionsGrid";
-import MissionShowcase from "@/components/MissionShowcase";
 import ProgressSection from "@/components/ProgressSection";
 import PrivacySection from "@/components/PrivacySection";
 import HowItWorks from "@/components/HowItWorks";
 import FAQSection from "@/components/FAQSection";
 import WaitlistSection from "@/components/WaitlistSection";
-import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <StructuredData />
       <Hero />
       <ExcusesSection />
       <MechanismSection />
       <MissionsGrid />
-      <MissionShowcase />
       <ProgressSection />
       <PrivacySection />
       <HowItWorks />
       <FAQSection />
       <WaitlistSection />
-      <Footer />
     </>
   );
 }

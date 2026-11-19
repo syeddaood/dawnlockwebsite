@@ -1,16 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 
 const LINKS = [
-  { href: "#mechanism", label: "How it locks" },
-  { href: "#missions", label: "Missions" },
-  { href: "#features", label: "Features" },
-  { href: "#proof", label: "Proof" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#mechanism", label: "How it locks" },
+  { href: "/#missions", label: "Missions" },
+  { href: "/features", label: "Features" },
+  { href: "/#proof", label: "Proof" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Nav() {
@@ -38,31 +39,31 @@ export default function Nav() {
         }`}
         aria-label="Primary"
       >
-        <a href="#top" className="flex items-center gap-2 font-display font-bold text-ink">
+        <Link href="/" className="flex items-center gap-2 font-display font-bold text-ink">
           <Logo size={26} />
           Cukkoo
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-7 md:flex">
           {LINKS.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="text-step--1 text-ink-dim transition hover:text-ink"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="hidden md:block">
-          <a
-            href="#waitlist"
+          <Link
+            href="/#waitlist"
             className="rounded-full bg-accent px-5 py-2 text-step--1 font-semibold text-ink-dark shadow-[0_8px_24px_-8px_rgba(232,116,47,0.6)] transition hover:bg-accent-strong active:scale-95"
           >
             Join the waitlist
-          </a>
+          </Link>
         </div>
 
         <button
@@ -88,23 +89,23 @@ export default function Nav() {
             <ul className="flex flex-col gap-1 px-5 py-4">
               {LINKS.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className="block rounded-m px-2 py-3 text-step-0 text-ink-dim hover:bg-surface hover:text-ink"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="pt-2">
-                <a
-                  href="#waitlist"
+                <Link
+                  href="/#waitlist"
                   onClick={() => setOpen(false)}
                   className="block rounded-full bg-accent px-5 py-3 text-center font-semibold text-ink-dark"
                 >
                   Join the waitlist
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
