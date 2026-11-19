@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { MOTION, staggerDelay } from "@/lib/motion";
 
 const MISSIONS = [
   {
@@ -48,7 +49,13 @@ export default function MissionShowcase() {
   return (
     <section id="features" className="relative bg-bg pb-24 pt-32 md:pt-40">
       <div className="mx-auto max-w-6xl px-5">
-        <Reveal className="max-w-2xl">
+        <Reveal
+          className="max-w-2xl"
+          direction="down"
+          distance={MOTION.slide}
+          duration={MOTION.durationNormal}
+          ease={MOTION.easeStandard}
+        >
           <p className="text-step--1 font-semibold uppercase tracking-[0.18em] text-accent">
             The missions
           </p>
@@ -63,7 +70,14 @@ export default function MissionShowcase() {
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {MISSIONS.map((mission, i) => (
-            <Reveal key={mission.title} delay={(i % 4) * 0.08}>
+            <Reveal
+              key={mission.title}
+              direction="down"
+              distance={MOTION.slide}
+              duration={MOTION.durationNormal}
+              ease={MOTION.easeStandard}
+              delay={staggerDelay(i, MOTION.staggerShot, MOTION.staggerSection)}
+            >
               <div className="flex h-full flex-col items-center text-center">
                 <div className="relative aspect-[560/1073] w-[170px] overflow-hidden rounded-[1.6rem] border border-white/10 shadow-[0_20px_50px_-18px_rgba(0,0,0,0.55)]">
                   <Image
