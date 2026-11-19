@@ -42,8 +42,8 @@ export default function Hero() {
         </h1>
 
         <motion.p
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={reduce ? false : { y: 16 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mx-auto mt-6 max-w-xl text-step-1 text-ink-dim"
         >
