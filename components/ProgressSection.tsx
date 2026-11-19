@@ -20,7 +20,18 @@ const SHOTS = [
   },
 ];
 
-const MILESTONES = [7, 30, 100, 365];
+const MILESTONES = [
+  { days: 7, name: "Early Bird" },
+  { days: 14, name: "Morning Glory" },
+  { days: 21, name: "Sunrise Seeker" },
+  { days: 30, name: "Chanticleer's Call" },
+  { days: 45, name: "Golden Hour Pioneer" },
+  { days: 60, name: "Morning Mentor" },
+  { days: 90, name: "Dawn Patrol Marshal" },
+  { days: 120, name: "Early Riser Vanguard" },
+  { days: 180, name: "Early Riser Olympian" },
+  { days: 365, name: "Morning Master" },
+];
 
 export default function ProgressSection() {
   return (
@@ -66,18 +77,23 @@ export default function ProgressSection() {
         <Reveal delay={0.2} className="mt-16">
           <div className="rounded-l border border-border bg-bg/60 p-6">
             <p className="text-step--1 font-semibold text-ink-dim">
-              Milestone badges, 7 days to 365
+              10 milestone badges, 7 days to 365
             </p>
-            <div className="mt-4 flex flex-wrap gap-4">
-              {MILESTONES.map((days) => (
+            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
+              {MILESTONES.map((milestone) => (
                 <div
-                  key={days}
-                  className="flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2"
+                  key={milestone.days}
+                  className="flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-2"
                 >
-                  <Medal className="h-4 w-4 text-gold" aria-hidden="true" />
-                  <span className="text-step--1 font-medium text-ink-dim">
-                    {days} {days === 1 ? "day" : "days"}
-                  </span>
+                  <Medal className="h-4 w-4 flex-shrink-0 text-gold" aria-hidden="true" />
+                  <div className="min-w-0">
+                    <p className="truncate text-step--1 font-medium text-ink-dim">
+                      {milestone.name}
+                    </p>
+                    <p className="truncate text-step--1 text-muted">
+                      {milestone.days} days
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
