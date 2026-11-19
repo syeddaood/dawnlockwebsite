@@ -13,6 +13,11 @@ export default function StructuredData() {
       applicationCategory: "UtilitiesApplication",
       description:
         "Cukkoo is an Android alarm clock app for heavy sleepers. It locks itself before it rings and won't stop until you complete a real wake-up mission — no snooze, no dismiss.",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
     },
     {
       "@context": "https://schema.org",
