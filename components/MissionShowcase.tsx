@@ -65,7 +65,7 @@ export default function MissionShowcase() {
           {MISSIONS.map((mission, i) => (
             <Reveal key={mission.title} delay={(i % 4) * 0.08}>
               <div className="flex h-full flex-col items-center text-center">
-                <div className="relative aspect-[280/607] w-[170px] overflow-hidden rounded-[1.6rem] border border-white/10 shadow-[0_20px_50px_-18px_rgba(0,0,0,0.55)]">
+                <div className="relative aspect-[560/1073] w-[170px] overflow-hidden rounded-[1.6rem] border border-white/10 shadow-[0_20px_50px_-18px_rgba(0,0,0,0.55)]">
                   <Image
                     src={mission.image}
                     alt={`Cukkoo ${mission.title} wake-up mission screen`}
