@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ExcusesSection from "@/components/ExcusesSection";
 import MechanismSection from "@/components/MechanismSection";
 import MissionsGrid from "@/components/MissionsGrid";
+import MissionShowcase from "@/components/MissionShowcase";
 import ProgressSection from "@/components/ProgressSection";
 import PrivacySection from "@/components/PrivacySection";
 import HowItWorks from "@/components/HowItWorks";
@@ -18,6 +19,7 @@ export default function Home() {
       <ExcusesSection />
       <MechanismSection />
       <MissionsGrid />
+      <MissionShowcase />
       <ProgressSection />
       <PrivacySection />
       <HowItWorks />

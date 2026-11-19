@@ -8,7 +8,7 @@ const STEPS = [
   {
     n: "01",
     title: "Set an alarm, pick a mission",
-    body: "Choose a time and the wake-up mission that will actually get you up: math, typing, memory, shake, hold-still, or a photo.",
+    body: "Choose a time and the wake-up mission that will actually get you up: math, typing, voice, memory, shake, exercise, balance, or a photo.",
   },
   {
     n: "02",

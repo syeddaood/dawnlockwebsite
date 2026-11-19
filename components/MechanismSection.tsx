@@ -22,7 +22,7 @@ const STEPS = [
     image: "/app-shots/math-mission.png",
     eyebrow: "03 — Wake-up missions",
     title: "Wake your brain, not just your thumb.",
-    body: "Pick per alarm: a math problem, a typing or voice challenge, a quick memory game, a physical shake, holding the phone still, or photographing a real-world object — verified entirely on-device.",
+    body: "Pick per alarm: a math problem, typing or saying a phrase, a quick memory game, a physical shake, a short exercise set, holding the phone steady, or photographing a real-world object — verified entirely on-device.",
   },
 ];
 

@@ -5,9 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Calculator,
   Keyboard,
+  Mic,
   Brain,
   Smartphone,
-  Hand,
+  Dumbbell,
+  Gauge,
   Camera,
   Lock,
   BellRing,
@@ -18,9 +20,11 @@ import Reveal from "./Reveal";
 const MISSION_TYPES = [
   { icon: Calculator, label: "Math", detail: "A couple of problems, no calculator." },
   { icon: Keyboard, label: "Typing", detail: "Retype a sentence, typos don't count." },
+  { icon: Mic, label: "Voice", detail: "Say a phrase out loud, checked for an 80% match." },
   { icon: Brain, label: "Memory", detail: "A quick sequence game, eyes open." },
   { icon: Smartphone, label: "Shake", detail: "Physically shake the phone to prove you're up." },
-  { icon: Hand, label: "Hold still", detail: "Keep the phone steady — the opposite problem." },
+  { icon: Dumbbell, label: "Exercise", detail: "Squats, jumping jacks, or push-ups — camera-counted." },
+  { icon: Gauge, label: "Balance", detail: "Hold the phone steady — the opposite problem." },
   { icon: Camera, label: "Photo", detail: "Snap a real-world object. Verified on-device only." },
 ];
 
@@ -180,7 +184,7 @@ function ReliabilityDemo() {
 
 const CARDS = [
   {
-    title: "Six ways to prove you're awake",
+    title: "Eight ways to prove you're awake",
     body: "Pick the mission that actually wakes your brain, not just your thumb.",
     demo: <MissionTypesDemo />,
   },

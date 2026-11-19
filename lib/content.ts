@@ -9,7 +9,7 @@ export const FAQS = [
   },
   {
     q: "What wake-up missions can I choose from?",
-    a: "Math problems, a typing or voice challenge, a quick memory game, physically shaking the phone, holding the phone still, or photographing a specific real-world object — verified on-device.",
+    a: "Math problems, typing or speaking a phrase, a quick memory game, physically shaking the phone, a short exercise set (squats, jumping jacks, push-ups), holding the phone steady, or photographing a specific real-world object — verified on-device.",
   },
   {
     q: "Is my camera or microphone data ever uploaded?",
@@ -29,7 +29,7 @@ export const FAQS = [
   },
   {
     q: "Can I shake my phone to turn off the alarm?",
-    a: "Yes. Shake is one of six wake-up mission types you can assign per alarm — math, typing, memory, shake, holding the phone still, or photographing an object — pick whichever one actually gets you moving.",
+    a: "Yes. Shake is one of eight wake-up mission types you can assign per alarm — math, typing, voice, memory, shake, exercise, balance, or photo — pick whichever one actually gets you moving.",
   },
   {
     q: "My alarm never wakes me up — will Cukkoo actually help?",
