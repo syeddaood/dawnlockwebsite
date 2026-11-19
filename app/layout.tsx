@@ -6,7 +6,7 @@ import "./globals.css";
 
 const TITLE = "Cukkoo: Alarm Clock App for Heavy Sleepers (No Snooze)";
 const DESCRIPTION =
-  "Cukkoo is the Android alarm clock app that locks itself and won't stop ringing until you solve a real wake-up mission — math, typing, memory, shake, or photo. No snooze, no dismiss button, no excuses.";
+  "Cukkoo is the Android alarm clock that locks itself and won't stop ringing until you complete a real wake-up mission. No snooze, no dismiss button, no excuses.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cukkoo.app"),
