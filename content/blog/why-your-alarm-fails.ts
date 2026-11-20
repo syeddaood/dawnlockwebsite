@@ -61,5 +61,5 @@ editable. Locking the alarm a few hours before it rings removes that
 decision entirely — by the time it's ringing, there's nothing left to
 negotiate with.
 
-[IMAGE: A phone on a nightstand showing a locked alarm icon, soft warm lamp light, minimal still-life composition | alt: A phone on a nightstand displaying a locked alarm]
+[IMAGE: A phone on a nightstand showing a locked alarm icon, soft warm lamp light, minimal still-life composition | alt: A phone on a nightstand displaying a locked alarm | src: /blog-images/why-your-alarm-fails/locked-alarm-nightstand.jpg]
 `;
