@@ -44,8 +44,9 @@ export default function BlogIndexPage() {
 
   return (
     <section className="relative bg-bg pb-24 pt-32 md:pt-40">
-      <div className="mx-auto max-w-3xl px-5">
+      <div className="mx-auto max-w-6xl px-5">
         <Reveal
+          className="max-w-2xl"
           direction="down"
           distance={MOTION.slide}
           duration={MOTION.durationNormal}
@@ -59,7 +60,7 @@ export default function BlogIndexPage() {
           </h1>
         </Reveal>
 
-        <div className="mt-14 flex flex-col gap-8">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post, i) => (
             <Reveal
               key={post.slug}
@@ -71,35 +72,39 @@ export default function BlogIndexPage() {
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className="block overflow-hidden rounded-l border border-border bg-surface transition hover:border-white/30"
+                className="flex h-full flex-col overflow-hidden rounded-l border border-border bg-surface transition hover:border-white/30"
               >
                 {post.heroImage?.src ? (
-                  <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border">
+                  <div className="relative aspect-[3/2] w-full overflow-hidden border-b border-border">
                     <Image
                       src={post.heroImage.src}
                       alt={post.heroImage.alt}
                       fill
-                      sizes="(min-width: 768px) 672px, 100vw"
+                      sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
                       loading="lazy"
                       className="object-cover"
                     />
                   </div>
                 ) : (
                   post.heroImage && (
-                    <div className="flex aspect-[21/9] flex-col items-center justify-center gap-1 border-b border-dashed border-border bg-bg/40 px-6 text-center">
+                    <div className="flex aspect-[3/2] flex-col items-center justify-center gap-1 border-b border-dashed border-border bg-bg/40 px-6 text-center">
                       <p className="text-step--1 font-semibold uppercase tracking-[0.14em] text-muted">
                         Image placeholder
                       </p>
-                      <p className="max-w-lg text-step--1 text-ink-dim">{post.heroImage.alt}</p>
+                      <p className="line-clamp-2 text-step--1 text-ink-dim">
+                        {post.heroImage.alt}
+                      </p>
                     </div>
                   )
                 )}
-                <div className="p-6">
+                <div className="flex flex-1 flex-col p-6">
                   <p className="text-step--1 font-mono text-muted">{formatDate(post.date)}</p>
-                  <h2 className="mt-2 font-display text-step-1 font-bold text-ink">
+                  <h2 className="mt-2 line-clamp-2 font-display text-step-1 font-bold text-ink">
                     {post.title}
                   </h2>
-                  <p className="mt-2 text-step--1 text-ink-dim">{post.description}</p>
+                  <p className="mt-2 line-clamp-2 text-step--1 text-ink-dim">
+                    {post.description}
+                  </p>
                 </div>
               </Link>
             </Reveal>
