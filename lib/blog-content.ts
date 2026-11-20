@@ -17,6 +17,8 @@ type ChartSpec = {
   values: number[];
 };
 
+export type HeroImage = { description: string; alt: string };
+
 const HERO_IMAGE_RE = /^\[HERO_IMAGE:\s*(.+?)\s*\|\s*alt:\s*(.+?)\]$/;
 const IMAGE_RE = /^\[IMAGE:\s*(.+?)\s*\|\s*alt:\s*(.+?)\]$/;
 const TLDR_RE = /^\[TLDR:\s*(.+?)\]$/;
@@ -202,4 +204,12 @@ function renderBlock(block: Block): string {
 
 export function renderBlogBody(body: string): string {
   return parseBlocks(body).map(renderBlock).join("\n");
+}
+
+export function extractHeroImage(body: string): HeroImage | null {
+  for (const line of body.split("\n")) {
+    const match = line.trim().match(HERO_IMAGE_RE);
+    if (match) return { description: match[1], alt: match[2] };
+  }
+  return null;
 }

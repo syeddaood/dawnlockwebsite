@@ -5,6 +5,7 @@ import * as scienceOfSleepCycles from "@/content/blog/science-of-sleep-cycles";
 import * as howMuchSleepYouNeedByAge from "@/content/blog/how-much-sleep-you-need-by-age";
 import * as whatIsSleepInertia from "@/content/blog/what-is-sleep-inertia";
 import * as is5amWakeupWorthIt from "@/content/blog/is-5am-wakeup-worth-it";
+import { extractHeroImage, type HeroImage } from "@/lib/blog-content";
 
 export type PostMeta = {
   title: string;
@@ -27,9 +28,9 @@ export const POSTS: Record<string, PostModule> = {
   "is-5am-wakeup-worth-it": is5amWakeupWorthIt,
 };
 
-export function getAllPosts(): (PostMeta & { slug: string })[] {
+export function getAllPosts(): (PostMeta & { slug: string; heroImage: HeroImage | null })[] {
   return Object.entries(POSTS)
-    .map(([slug, mod]) => ({ slug, ...mod.metadata }))
+    .map(([slug, mod]) => ({ slug, ...mod.metadata, heroImage: extractHeroImage(mod.body) }))
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 

@@ -70,13 +70,23 @@ export default function BlogIndexPage() {
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className="block rounded-l border border-border bg-surface p-6 transition hover:border-white/30"
+                className="block overflow-hidden rounded-l border border-border bg-surface transition hover:border-white/30"
               >
-                <p className="text-step--1 font-mono text-muted">{formatDate(post.date)}</p>
-                <h2 className="mt-2 font-display text-step-1 font-bold text-ink">
-                  {post.title}
-                </h2>
-                <p className="mt-2 text-step--1 text-ink-dim">{post.description}</p>
+                {post.heroImage && (
+                  <div className="flex aspect-[21/9] flex-col items-center justify-center gap-1 border-b border-dashed border-border bg-bg/40 px-6 text-center">
+                    <p className="text-step--1 font-semibold uppercase tracking-[0.14em] text-muted">
+                      Image placeholder
+                    </p>
+                    <p className="max-w-lg text-step--1 text-ink-dim">{post.heroImage.alt}</p>
+                  </div>
+                )}
+                <div className="p-6">
+                  <p className="text-step--1 font-mono text-muted">{formatDate(post.date)}</p>
+                  <h2 className="mt-2 font-display text-step-1 font-bold text-ink">
+                    {post.title}
+                  </h2>
+                  <p className="mt-2 text-step--1 text-ink-dim">{post.description}</p>
+                </div>
               </Link>
             </Reveal>
           ))}
