@@ -223,3 +223,13 @@ export function extractHeroImage(body: string): HeroImage | null {
   }
   return null;
 }
+
+export function extractImageSrcs(body: string): string[] {
+  const srcs: string[] = [];
+  for (const rawLine of body.split("\n")) {
+    const line = rawLine.trim();
+    const match = line.match(HERO_IMAGE_RE) ?? line.match(IMAGE_RE);
+    if (match?.[3]) srcs.push(match[3]);
+  }
+  return srcs;
+}

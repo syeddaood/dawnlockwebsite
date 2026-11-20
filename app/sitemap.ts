@@ -51,6 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: post.date,
       changeFrequency: "monthly" as const,
       priority: 0.5,
+      ...(post.imageSrcs.length > 0 && {
+        images: post.imageSrcs.map((src) => `${SITE_URL}${src}`),
+      }),
     })),
   ];
 }
