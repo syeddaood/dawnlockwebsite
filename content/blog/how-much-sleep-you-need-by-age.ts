@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: A softly lit bedroom at dawn, a child, a teenager, and an adult shown in three gentle vignettes to suggest sleep across different life stages, warm amber and plum tones, calm editorial photography style | alt: A bedroom scene evoking different ages and their sleep needs]
+[HERO_IMAGE: A softly lit bedroom at dawn, a child, a teenager, and an adult shown in three gentle vignettes to suggest sleep across different life stages, warm amber and plum tones, calm editorial photography style | alt: A bedroom scene evoking different ages and their sleep needs | src: /blog-images/how-much-sleep-you-need-by-age/hero.jpg]
 
 [TLDR: Sleep need isn't one number — it ranges from 14-17 hours for newborns down to 7-9 for most adults, and the right amount for you depends on genetics and health, not just age.]
 
@@ -33,7 +33,7 @@ healthy adults and children:
 These are ranges, not targets to hit exactly — the right number for you
 depends on genetics, activity level, and overall health, not just age.
 
-[IMAGE: A split-frame illustration contrasting a well-rested teenager and a groggy, under-slept teenager getting ready in the morning, muted editorial illustration style | alt: Illustration contrasting a rested and an under-slept teenager]
+[IMAGE: A split-frame illustration contrasting a well-rested teenager and a groggy, under-slept teenager getting ready in the morning, muted editorial illustration style | alt: Illustration contrasting a rested and an under-slept teenager | src: /blog-images/how-much-sleep-you-need-by-age/rested-vs-groggy-teen.jpg]
 
 ## Why teenagers are a special case
 
