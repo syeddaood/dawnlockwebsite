@@ -1,9 +1,10 @@
----
-title: "How much sleep you actually need at different ages"
-description: "'Eight hours' isn't a universal rule — how much sleep you need changes significantly across childhood, adolescence, and adulthood."
-date: "2026-11-20"
----
+export const metadata = {
+  title: "How much sleep you actually need at different ages",
+  description: "'Eight hours' isn't a universal rule — how much sleep you need changes significantly across childhood, adolescence, and adulthood.",
+  date: "2026-11-20",
+};
 
+export const body = `
 "Eight hours a night" gets repeated so often it's treated as a universal
 law, but sleep need actually shifts quite a bit across a lifetime. Sleeping
 to the wrong number for your age can leave you tired even when you're
@@ -57,3 +58,4 @@ sleep, not a better morning routine — no wake-up trick, Cukkoo included,
 makes up for a real sleep deficit. What a strong wake-up routine *can* do is
 make sure the sleep you did get actually translates into getting up when
 you intended to, instead of evaporating into a dozen snoozed minutes.
+`;

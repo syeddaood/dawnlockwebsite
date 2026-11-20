@@ -1,9 +1,10 @@
----
-title: "The science of sleep cycles: why waking at the right moment matters"
-description: "Sleep isn't one long flat state — it's a repeating cycle, and where in that cycle your alarm catches you matters more than how many hours you slept."
-date: "2026-11-20"
----
+export const metadata = {
+  title: "The science of sleep cycles: why waking at the right moment matters",
+  description: "Sleep isn't one long flat state — it's a repeating cycle, and where in that cycle your alarm catches you matters more than how many hours you slept.",
+  date: "2026-11-20",
+};
 
+export const body = `
 Two nights of exactly 7.5 hours of sleep can feel completely different the
 next morning. The difference usually isn't the sleep itself — it's the exact
 moment within a sleep cycle that you got pulled out of it.
@@ -54,3 +55,4 @@ specialized tracking, but you can shift the odds in your favor:
   avoiding it entirely is not letting that grogginess talk you into going
   back under — which is exactly the moment a snooze button is most
   dangerous, and exactly why Cukkoo doesn't give you one.
+`;

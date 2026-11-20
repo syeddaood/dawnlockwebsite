@@ -1,9 +1,10 @@
----
-title: "How to wake up early without feeling groggy"
-description: "Waking up earlier isn't the hard part — waking up clear-headed is. Here's what actually reduces morning grogginess, and what doesn't."
-date: "2026-11-20"
----
+export const metadata = {
+  title: "How to wake up early without feeling groggy",
+  description: "Waking up earlier isn't the hard part — waking up clear-headed is. Here's what actually reduces morning grogginess, and what doesn't.",
+  date: "2026-11-20",
+};
 
+export const body = `
 Most people who try to wake up earlier give up within a week — not because
 the alarm didn't go off, but because every morning felt like wading through
 fog. That fog has a cause, and most of the usual advice ("just go to bed
@@ -53,3 +54,4 @@ willpower problem more than a sleep-science one, which is exactly why
 Cukkoo locks the alarm and makes you complete a real wake-up mission before
 it'll stop — removing the moment where grogginess usually wins the
 argument.
+`;

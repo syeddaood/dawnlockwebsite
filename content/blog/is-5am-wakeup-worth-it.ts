@@ -1,9 +1,10 @@
----
-title: "Is waking up at 5 AM worth it?"
-description: "5am wake-ups get sold as a productivity cheat code. The honest answer is: it depends what you're actually optimizing for."
-date: "2026-11-20"
----
+export const metadata = {
+  title: "Is waking up at 5 AM worth it?",
+  description: "5am wake-ups get sold as a productivity cheat code. The honest answer is: it depends what you're actually optimizing for.",
+  date: "2026-11-20",
+};
 
+export const body = `
 The 5am wake-up has become something of a productivity cliché — a signal
 that someone is serious about their mornings. Strip away the hustle-culture
 packaging, though, and there's a more useful, less universal question
@@ -57,3 +58,4 @@ itself — it's reliably getting up *at* that time instead of negotiating it
 away each morning. That's a consistency problem, which is exactly what a
 locked alarm and a real wake-up mission are designed to solve, at 5am or
 any other hour.
+`;

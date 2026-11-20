@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts } from "@/lib/posts";
 import Reveal from "@/components/Reveal";
 import { MOTION, staggerDelay } from "@/lib/motion";
+
+export const dynamic = "force-static";
 
 const TITLE = "Blog — Cukkoo";
 const DESCRIPTION =

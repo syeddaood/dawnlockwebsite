@@ -1,9 +1,10 @@
----
-title: "What sleep inertia is and how to shake it off faster"
-description: "That heavy, foggy feeling right after waking up has a name — sleep inertia — and a few genuine ways to shorten it."
-date: "2026-11-20"
----
+export const metadata = {
+  title: "What sleep inertia is and how to shake it off faster",
+  description: "That heavy, foggy feeling right after waking up has a name — sleep inertia — and a few genuine ways to shorten it.",
+  date: "2026-11-20",
+};
 
+export const body = `
 The groggy, thick-headed feeling in the minutes after waking up isn't
 laziness or a bad night's sleep by itself — it's a well-documented state
 called sleep inertia, and it happens to almost everyone to some degree.
@@ -57,3 +58,4 @@ waking up — it's making sure you only have to wake up once. That's the
 specific problem Cukkoo's wake-up missions are built to force: a few
 minutes of real mental or physical engagement, right at the start, instead
 of a slow, drawn-out drift through a half-conscious haze.
+`;

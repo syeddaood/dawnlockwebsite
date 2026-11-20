@@ -1,9 +1,10 @@
----
-title: "Why your alarm clock keeps failing you"
-description: "Snooze buttons and swipe-to-dismiss don't fail by accident — they're designed to be easy to beat at 6am. Here's what actually works."
-date: "2026-11-19"
----
+export const metadata = {
+  title: "Why your alarm clock keeps failing you",
+  description: "Snooze buttons and swipe-to-dismiss don't fail by accident — they're designed to be easy to beat at 6am. Here's what actually works.",
+  date: "2026-11-19",
+};
 
+export const body = `
 Every alarm app promises to get you up. Almost none of them survive contact
 with 6am-you — the half-asleep version of yourself who swipes, taps snooze,
 or just mutes the phone without ever really waking up.
@@ -38,3 +39,4 @@ in the moment, they decide it the night before, by leaving the alarm
 editable. Locking the alarm a few hours before it rings removes that
 decision entirely — by the time it's ringing, there's nothing left to
 negotiate with.
+`;

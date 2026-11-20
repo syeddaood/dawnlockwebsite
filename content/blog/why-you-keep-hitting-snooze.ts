@@ -1,9 +1,10 @@
----
-title: "Why you keep hitting snooze, and how to stop"
-description: "Snoozing isn't a lack of discipline — it's a half-asleep brain taking the path of least resistance. Here's why it happens and what actually breaks the habit."
-date: "2026-11-20"
----
+export const metadata = {
+  title: "Why you keep hitting snooze, and how to stop",
+  description: "Snoozing isn't a lack of discipline — it's a half-asleep brain taking the path of least resistance. Here's why it happens and what actually breaks the habit.",
+  date: "2026-11-20",
+};
 
+export const body = `
 If you snooze every morning despite genuinely wanting to get up, the
 problem isn't motivation. It's that the decision to snooze isn't really
 a decision — it's a reflex, made by a brain that's barely online.
@@ -47,3 +48,4 @@ That last point is the whole premise behind Cukkoo: alarms lock themselves
 hours before they ring, and the only way to stop one is to finish a real
 wake-up mission. There's no snooze button to reflexively hit, because
 there's no snooze button.
+`;
