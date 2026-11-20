@@ -5,6 +5,10 @@ export const metadata = {
 };
 
 export const body = `
+[HERO_IMAGE: Morning sunlight streaming through open blinds onto a rumpled bed, dust motes visible in the light beam, warm golden-hour tones | alt: Sunlight streaming through open blinds onto a bed]
+
+[TLDR: Grogginess is mostly a timing problem, not a sleep-amount problem — waking mid-cycle out of deep sleep causes the fog, and the fix is a consistent wake time plus immediate light exposure.]
+
 Most people who try to wake up earlier give up within a week — not because
 the alarm didn't go off, but because every morning felt like wading through
 fog. That fog has a cause, and most of the usual advice ("just go to bed
@@ -22,6 +26,8 @@ different. The fix isn't just "more sleep," it's waking up at a better point
 in the cycle, which usually means keeping a consistent sleep and wake time
 so your body's rhythm becomes predictable enough to work with.
 
+[IMAGE: A simple illustrated wave diagram showing a person waking up cleanly during a light-sleep dip versus being jolted awake mid-peak of a deep-sleep wave, clean editorial infographic style | alt: Illustration contrasting waking during light sleep versus deep sleep]
+
 ## What actually helps
 
 - **A consistent wake time, weekends included.** Your circadian rhythm
@@ -38,11 +44,17 @@ so your body's rhythm becomes predictable enough to work with.
   easier — but having it ready removes one more decision to make while
   groggy.
 
+[TIP: Open the blinds, or step outside for thirty seconds, before you look at your phone — light exposure works faster than almost anything else on this list.]
+
 ## What doesn't help
 
 Hitting snooze doesn't let you "finish" a sleep cycle — it just starts a new,
 shorter one you'll get yanked out of again a few minutes later, often
 leaving you groggier than if you'd gotten up the first time.
+
+[QUOTE: Snoozing doesn't finish a sleep cycle — it starts a new one you'll get yanked out of again a few minutes later.]
+
+[IMAGE: A person stretching with arms overhead while standing beside an open window, backlit by morning light, candid editorial photography style | alt: A person stretching beside an open window in morning light]
 
 ## The actual lever
 

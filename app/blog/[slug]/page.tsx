@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { marked } from "marked";
 import { getAllPosts, getPost } from "@/lib/posts";
+import { renderBlogBody } from "@/lib/blog-content";
+import BlogRichContent from "@/components/BlogRichContent";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -56,7 +57,7 @@ export default async function BlogPostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
-  const html = marked.parse(post.body, { async: false });
+  const html = renderBlogBody(post.body);
 
   return (
     <article className="relative bg-bg pb-24 pt-32 md:pt-40">
@@ -67,7 +68,9 @@ export default async function BlogPostPage({
         </h1>
         <p className="mt-4 text-step-0 text-ink-dim">{post.metadata.description}</p>
 
-        <div className="blog-content mt-10" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="mt-10">
+          <BlogRichContent html={html} />
+        </div>
       </div>
     </article>
   );

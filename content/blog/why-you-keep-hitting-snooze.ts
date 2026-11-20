@@ -5,6 +5,10 @@ export const metadata = {
 };
 
 export const body = `
+[HERO_IMAGE: A groggy hand reaching toward a phone on a nightstand in dim pre-dawn light, slight motion blur, muted blue and plum tones | alt: A hand reaching toward a phone on a nightstand in dim pre-dawn light]
+
+[TLDR: Hitting snooze isn't a willpower failure — it's a reflex from a prefrontal cortex that's still offline. The decision is actually made the night before, the moment the alarm is left editable.]
+
 If you snooze every morning despite genuinely wanting to get up, the
 problem isn't motivation. It's that the decision to snooze isn't really
 a decision — it's a reflex, made by a brain that's barely online.
@@ -22,6 +26,10 @@ By the time you're awake enough to regret it, you've already lost ten or
 twenty minutes, usually to low-quality, fragmented sleep that makes the next
 wake-up harder, not easier.
 
+[QUOTE: Snooze isn't a decision you make at 6am — it's a decision you already made the night before.]
+
+[IMAGE: A phone screen glowing in a dark room showing a snooze button being tapped by a barely-visible half-asleep hand, moody low-light photography style | alt: A half-asleep hand tapping a glowing snooze button]
+
 ## The real decision happens the night before
 
 Here's the part most people miss: you don't decide to snooze in the moment.
@@ -32,6 +40,8 @@ half-asleep brain just exercises the option you left open for it.
 This is why "just use more willpower" doesn't work. You're asking
 tomorrow-morning-you, who is barely conscious, to out-negotiate a habit.
 That's not a fair fight.
+
+[TIP: If you only make one change, move the phone out of arm's reach tonight — it removes the blind, half-asleep tap before any of the other fixes even matter.]
 
 ## What actually breaks the cycle
 

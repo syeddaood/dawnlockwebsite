@@ -5,6 +5,10 @@ export const metadata = {
 };
 
 export const body = `
+[HERO_IMAGE: A lone figure sitting quietly with coffee at a kitchen table before sunrise, dark windows, warm interior lamp light, calm and still mood | alt: A person sitting quietly with coffee at a kitchen table before sunrise]
+
+[TLDR: A 5am wake-up genuinely gives you uninterrupted time and fresh willpower, but only if you protect the sleep you'd otherwise cut short — the real question is what wake-up time lets you keep both.]
+
 The 5am wake-up has become something of a productivity cliché — a signal
 that someone is serious about their mornings. Strip away the hustle-culture
 packaging, though, and there's a more useful, less universal question
@@ -35,6 +39,16 @@ genuinely wired to feel sharper later in the day — forcing a 5am routine
 onto a naturally late-shifted body clock can produce exhaustion rather than
 productivity, no matter how disciplined the attempt.
 
+| What it gives you | What it doesn't give you |
+| --- | --- |
+| Uninterrupted, low-demand time | Extra hours out of nowhere |
+| Willpower at its freshest | A fix for a late chronotype |
+| A forcing function for bedtime | Permission to cut sleep short |
+
+[QUOTE: An earlier alarm with the same old bedtime is just sleep deprivation with better branding.]
+
+[IMAGE: A tired person yawning while standing over a coffee machine in dim early morning light, candid editorial photography style | alt: A tired person yawning over a coffee machine in early morning light]
+
 ## The actual question to ask
 
 Not "should I wake up at 5am" but: **"what time would I wake up at if I
@@ -52,6 +66,8 @@ that's a perfectly good outcome.
 - Give it two to three weeks before judging how it feels; the first few
   mornings of any schedule change are rough regardless of whether the
   schedule itself is a good fit.
+
+[TIP: Set your target bedtime first, then work your wake time backward from a full night's sleep — not the other way around.]
 
 Whatever time you land on, the actual hard part is rarely the wake-up time
 itself — it's reliably getting up *at* that time instead of negotiating it

@@ -5,6 +5,10 @@ export const metadata = {
 };
 
 export const body = `
+[HERO_IMAGE: An abstract night-sky illustration showing a sleeping figure with a glowing wave cycling through four soft color bands representing sleep stages, dark plum and amber palette | alt: Abstract illustration of a sleep cycle wave over a sleeping figure]
+
+[TLDR: Sleep moves through a repeating ~90-minute cycle of light, deep, and REM stages — getting woken mid-deep-sleep is what causes heavy grogginess, regardless of total hours slept.]
+
 Two nights of exactly 7.5 hours of sleep can feel completely different the
 next morning. The difference usually isn't the sleep itself — it's the exact
 moment within a sleep cycle that you got pulled out of it.
@@ -23,9 +27,20 @@ stages:
   emotional regulation. Waking here can leave a lingering, dream-like
   disorientation.
 
+\`\`\`mermaid
+flowchart LR
+    A[Awake] --> B[Light sleep N1/N2]
+    B --> C[Deep sleep N3]
+    C --> D[REM sleep]
+    D --> B
+    D -. cycle repeats 4-6x per night .-> A
+\`\`\`
+
 Across a full night, you cycle through these stages four to six times, with
 deep sleep concentrated earlier in the night and REM periods lengthening
 toward morning.
+
+[IMAGE: A simple diagram-style illustration of a night timeline showing deep sleep concentrated early and REM lengthening toward morning, clean editorial infographic style | alt: Timeline illustration showing deep sleep early and REM increasing toward morning]
 
 ## Why the exact wake-up moment matters
 
@@ -44,6 +59,8 @@ was slightly more fragmented.
 You can't precisely control which stage you're in at a given minute without
 specialized tracking, but you can shift the odds in your favor:
 
+[TIP: Count backward from your wake time in 90-minute blocks to pick a bedtime — it won't guarantee a perfect cycle, but it shifts the odds.]
+
 - **Sleep in 90-minute multiples.** Working backward from your wake time in
   ~90-minute blocks (e.g. 6, 7.5, or 9 hours) increases the chance you
   surface near a natural light-sleep transition rather than mid-cycle.
@@ -55,4 +72,6 @@ specialized tracking, but you can shift the odds in your favor:
   avoiding it entirely is not letting that grogginess talk you into going
   back under — which is exactly the moment a snooze button is most
   dangerous, and exactly why Cukkoo doesn't give you one.
+
+[QUOTE: A fixed alarm has no idea which sleep stage it's about to interrupt.]
 `;

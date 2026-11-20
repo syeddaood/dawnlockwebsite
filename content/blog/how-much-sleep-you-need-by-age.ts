@@ -5,6 +5,10 @@ export const metadata = {
 };
 
 export const body = `
+[HERO_IMAGE: A softly lit bedroom at dawn, a child, a teenager, and an adult shown in three gentle vignettes to suggest sleep across different life stages, warm amber and plum tones, calm editorial photography style | alt: A bedroom scene evoking different ages and their sleep needs]
+
+[TLDR: Sleep need isn't one number — it ranges from 14-17 hours for newborns down to 7-9 for most adults, and the right amount for you depends on genetics and health, not just age.]
+
 "Eight hours a night" gets repeated so often it's treated as a universal
 law, but sleep need actually shifts quite a bit across a lifetime. Sleeping
 to the wrong number for your age can leave you tired even when you're
@@ -24,8 +28,12 @@ healthy adults and children:
 - **Adults (18–64 years):** 7–9 hours
 - **Older adults (65+):** 7–8 hours
 
+[CHART: {"type":"bar","title":"Recommended sleep, midpoint of range (hours)","labels":["Newborn","Infant","Toddler","Preschool","School-age","Teen","Adult","65+"],"values":[15.5,13.5,12.5,11.5,10.5,9,8,7.5]}]
+
 These are ranges, not targets to hit exactly — the right number for you
 depends on genetics, activity level, and overall health, not just age.
+
+[IMAGE: A split-frame illustration contrasting a well-rested teenager and a groggy, under-slept teenager getting ready in the morning, muted editorial illustration style | alt: Illustration contrasting a rested and an under-slept teenager]
 
 ## Why teenagers are a special case
 
@@ -36,6 +44,8 @@ early school start times, this is a large part of why teens are
 chronically under-slept — it's a mismatch between biology and schedule, not
 just a discipline problem.
 
+[TIP: If mornings are a fight, protect the bedtime side first — an earlier alarm rarely helps if the extra hour just gets stolen from sleep instead of added to it.]
+
 ## Why "I function fine on 5 hours" is usually wrong
 
 A small fraction of the population genuinely carries a rare genetic
@@ -43,6 +53,8 @@ variant that allows them to function well on less sleep. Almost everyone
 who believes they're in that group is not — they've simply adapted to
 chronic sleep debt, which dulls the *feeling* of tiredness without removing
 its effects on memory, mood, and reaction time.
+
+[QUOTE: Feeling used to being tired is not the same thing as not being tired.]
 
 ## The practical takeaway
 

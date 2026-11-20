@@ -5,6 +5,10 @@ export const metadata = {
 };
 
 export const body = `
+[HERO_IMAGE: A person sitting on the edge of a bed with head in hands in the first foggy moment after waking, soft blue pre-dawn light through a window, quiet editorial photography style | alt: A person sitting on the edge of a bed in the foggy moment after waking]
+
+[TLDR: Sleep inertia is the real, well-documented lag between basic alertness and your prefrontal cortex coming back online — it can last twenty minutes or more, and going back to sleep only makes it worse.]
+
 The groggy, thick-headed feeling in the minutes after waking up isn't
 laziness or a bad night's sleep by itself — it's a well-documented state
 called sleep inertia, and it happens to almost everyone to some degree.
@@ -25,12 +29,16 @@ It's usually worse when:
 - You wake up during your body's natural circadian low point (commonly in
   the very early morning hours).
 
+[QUOTE: You're conscious, but not fully capable of clear thinking — that gap is sleep inertia.]
+
 ## Why it feels different some days than others
 
 This is also why sleep inertia can feel brutal one morning and barely
 noticeable the next, even with a similar amount of total sleep — it has
 more to do with *which stage* of your sleep cycle you were pulled out of
 than how long you slept overall.
+
+[IMAGE: A person splashing cold water on their face at a bathroom sink in early morning light, candid editorial photography style | alt: A person splashing cold water on their face in the morning]
 
 ## What shortens it
 
@@ -44,6 +52,8 @@ than how long you slept overall.
 - **Caffeine — with realistic timing.** It takes roughly 20–30 minutes to
   take effect, so it shortens the *tail end* of sleep inertia more than the
   first few minutes.
+
+[TIP: Stack two of these at once — step into bright light while doing a short burst of movement — rather than waiting for one to finish before starting the next.]
 
 ## What makes it worse
 
