@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: An abstract night-sky illustration showing a sleeping figure with a glowing wave cycling through four soft color bands representing sleep stages, dark plum and amber palette | alt: Abstract illustration of a sleep cycle wave over a sleeping figure]
+[HERO_IMAGE: An abstract night-sky illustration showing a sleeping figure with a glowing wave cycling through four soft color bands representing sleep stages, dark plum and amber palette | alt: Abstract illustration of a sleep cycle wave over a sleeping figure | src: /blog-images/science-of-sleep-cycles/hero.jpg]
 
 [TLDR: Sleep moves through a repeating ~90-minute cycle of light, deep, and REM stages — getting woken mid-deep-sleep is what causes heavy grogginess, regardless of total hours slept.]
 
@@ -40,7 +40,7 @@ Across a full night, you cycle through these stages four to six times, with
 deep sleep concentrated earlier in the night and REM periods lengthening
 toward morning.
 
-[IMAGE: A simple diagram-style illustration of a night timeline showing deep sleep concentrated early and REM lengthening toward morning, clean editorial infographic style | alt: Timeline illustration showing deep sleep early and REM increasing toward morning]
+[IMAGE: A simple diagram-style illustration of a night timeline showing deep sleep concentrated early and REM lengthening toward morning, clean editorial infographic style | alt: Timeline illustration showing deep sleep early and REM increasing toward morning | src: /blog-images/science-of-sleep-cycles/nights-sleep-chart.jpg]
 
 ## Why the exact wake-up moment matters
 
