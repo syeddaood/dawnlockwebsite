@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: A groggy hand reaching toward a phone on a nightstand in dim pre-dawn light, slight motion blur, muted blue and plum tones | alt: A hand reaching toward a phone on a nightstand in dim pre-dawn light]
+[HERO_IMAGE: A groggy hand reaching toward a phone on a nightstand in dim pre-dawn light, slight motion blur, muted blue and plum tones | alt: A hand reaching toward a phone on a nightstand in dim pre-dawn light | src: /blog-images/why-you-keep-hitting-snooze/hero.jpg]
 
 [TLDR: Hitting snooze isn't a willpower failure — it's a reflex from a prefrontal cortex that's still offline. The decision is actually made the night before, the moment the alarm is left editable.]
 
@@ -28,7 +28,7 @@ wake-up harder, not easier.
 
 [QUOTE: Snooze isn't a decision you make at 6am — it's a decision you already made the night before.]
 
-[IMAGE: A phone screen glowing in a dark room showing a snooze button being tapped by a barely-visible half-asleep hand, moody low-light photography style | alt: A half-asleep hand tapping a glowing snooze button]
+[IMAGE: A phone screen glowing in a dark room showing a snooze button being tapped by a barely-visible half-asleep hand, moody low-light photography style | alt: A half-asleep hand tapping a glowing snooze button | src: /blog-images/why-you-keep-hitting-snooze/tapping-snooze.jpg]
 
 ## The real decision happens the night before
 
