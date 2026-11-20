@@ -68,7 +68,7 @@ export default function MissionShowcase() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 flex flex-col gap-20 md:mt-28 md:gap-28">
           {MISSIONS.map((mission, i) => (
             <Reveal
               key={mission.title}
@@ -78,22 +78,30 @@ export default function MissionShowcase() {
               ease={MOTION.easeStandard}
               delay={staggerDelay(i, MOTION.staggerShot, MOTION.staggerSection)}
             >
-              <div className="flex h-full flex-col items-center text-center">
-                <div className="relative aspect-[560/1073] w-[170px] overflow-hidden rounded-[1.6rem] border border-white/10 shadow-[0_20px_50px_-18px_rgba(0,0,0,0.55)]">
+              <div
+                className={
+                  "flex flex-col items-center gap-10 text-center md:flex-row md:justify-center md:gap-16 md:text-left" +
+                  (i % 2 === 1 ? " md:flex-row-reverse" : "")
+                }
+              >
+                <div className="relative aspect-[560/1073] w-[220px] flex-shrink-0 overflow-hidden rounded-[1.8rem] border border-white/10 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.55)] sm:w-[240px] md:w-[260px]">
                   <Image
                     src={mission.image}
                     alt={`Cukkoo ${mission.title} wake-up mission screen`}
                     fill
-                    sizes="170px"
+                    sizes="(min-width: 768px) 260px, 220px"
                     className="object-cover"
                   />
                 </div>
-                <h3 className="mt-5 font-display text-step-1 font-bold text-ink">
-                  {mission.title}
-                </h3>
-                <p className="mt-2 max-w-[18rem] text-step--1 text-ink-dim">
-                  {mission.body}
-                </p>
+                <div className="max-w-md">
+                  <p className="font-mono text-step--1 text-muted">
+                    {String(i + 1).padStart(2, "0")} / {String(MISSIONS.length).padStart(2, "0")}
+                  </p>
+                  <h2 className="mt-2 font-display text-step-2 font-bold text-ink">
+                    {mission.title}
+                  </h2>
+                  <p className="mt-3 text-step-0 text-ink-dim">{mission.body}</p>
+                </div>
               </div>
             </Reveal>
           ))}
