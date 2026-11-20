@@ -2,8 +2,8 @@ import { marked } from "marked";
 
 type Block =
   | { type: "markdown"; content: string }
-  | { type: "hero_image"; description: string; alt: string }
-  | { type: "image"; description: string; alt: string }
+  | { type: "hero_image"; description: string; alt: string; src?: string }
+  | { type: "image"; description: string; alt: string; src?: string }
   | { type: "tldr"; text: string }
   | { type: "tip"; text: string }
   | { type: "quote"; text: string }
@@ -17,10 +17,12 @@ type ChartSpec = {
   values: number[];
 };
 
-export type HeroImage = { description: string; alt: string };
+export type HeroImage = { description: string; alt: string; src?: string };
 
-const HERO_IMAGE_RE = /^\[HERO_IMAGE:\s*(.+?)\s*\|\s*alt:\s*(.+?)\]$/;
-const IMAGE_RE = /^\[IMAGE:\s*(.+?)\s*\|\s*alt:\s*(.+?)\]$/;
+// src is optional: "[HERO_IMAGE: desc | alt: text]" renders a placeholder,
+// "[HERO_IMAGE: desc | alt: text | src: /path.jpg]" renders the real image.
+const HERO_IMAGE_RE = /^\[HERO_IMAGE:\s*(.+?)\s*\|\s*alt:\s*(.+?)(?:\s*\|\s*src:\s*(.+?))?\]$/;
+const IMAGE_RE = /^\[IMAGE:\s*(.+?)\s*\|\s*alt:\s*(.+?)(?:\s*\|\s*src:\s*(.+?))?\]$/;
 const TLDR_RE = /^\[TLDR:\s*(.+?)\]$/;
 const TIP_RE = /^\[TIP:\s*(.+?)\]$/;
 const QUOTE_RE = /^\[QUOTE:\s*(.+?)\]$/;
@@ -44,14 +46,14 @@ function parseBlocks(body: string): Block[] {
     const hero = line.match(HERO_IMAGE_RE);
     if (hero) {
       flush();
-      blocks.push({ type: "hero_image", description: hero[1], alt: hero[2] });
+      blocks.push({ type: "hero_image", description: hero[1], alt: hero[2], src: hero[3] });
       continue;
     }
 
     const image = line.match(IMAGE_RE);
     if (image) {
       flush();
-      blocks.push({ type: "image", description: image[1], alt: image[2] });
+      blocks.push({ type: "image", description: image[1], alt: image[2], src: image[3] });
       continue;
     }
 
@@ -115,7 +117,15 @@ function escapeHtml(text: string): string {
     .replace(/'/g, "&#39;");
 }
 
-function renderImagePlaceholder(description: string, alt: string, isHero: boolean): string {
+function renderImageBlock(
+  { description, alt, src }: { description: string; alt: string; src?: string },
+  isHero: boolean,
+): string {
+  if (src) {
+    return `<figure class="blog-image${isHero ? " blog-image-hero" : ""}">
+  <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" width="1280" height="720" loading="${isHero ? "eager" : "lazy"}"${isHero ? ' fetchpriority="high"' : ""} />
+</figure>`;
+  }
   return `<figure class="blog-image-placeholder${isHero ? " blog-image-placeholder-hero" : ""}">
   <p class="blog-image-placeholder-label">${isHero ? "Hero image" : "Image"} placeholder</p>
   <p class="blog-image-placeholder-desc">${escapeHtml(description)}</p>
@@ -186,9 +196,9 @@ function renderBlock(block: Block): string {
     case "markdown":
       return marked.parse(block.content, { async: false }) as string;
     case "hero_image":
-      return renderImagePlaceholder(block.description, block.alt, true);
+      return renderImageBlock(block, true);
     case "image":
-      return renderImagePlaceholder(block.description, block.alt, false);
+      return renderImageBlock(block, false);
     case "tldr":
       return `<div class="blog-callout blog-callout-tldr"><p class="blog-callout-label">TL;DR</p><p>${marked.parseInline(block.text, { async: false })}</p></div>`;
     case "tip":
@@ -209,7 +219,7 @@ export function renderBlogBody(body: string): string {
 export function extractHeroImage(body: string): HeroImage | null {
   for (const line of body.split("\n")) {
     const match = line.trim().match(HERO_IMAGE_RE);
-    if (match) return { description: match[1], alt: match[2] };
+    if (match) return { description: match[1], alt: match[2], src: match[3] };
   }
   return null;
 }

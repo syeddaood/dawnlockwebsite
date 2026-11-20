@@ -274,6 +274,23 @@ button {
   color: #f7f3ed;
 }
 
+/* real post images (once a [src: ...] is supplied) */
+.blog-image {
+  margin: 2rem 0 0;
+}
+
+.blog-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-l);
+  border: 1px solid #2a2635;
+  object-fit: cover;
+}
+
+.blog-image-hero {
+  margin-top: 0;
+}
+
 /* image placeholders */
 .blog-image-placeholder {
   margin-top: 2rem;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import Reveal from "@/components/Reveal";
@@ -72,13 +73,26 @@ export default function BlogIndexPage() {
                 href={`/blog/${post.slug}`}
                 className="block overflow-hidden rounded-l border border-border bg-surface transition hover:border-white/30"
               >
-                {post.heroImage && (
-                  <div className="flex aspect-[21/9] flex-col items-center justify-center gap-1 border-b border-dashed border-border bg-bg/40 px-6 text-center">
-                    <p className="text-step--1 font-semibold uppercase tracking-[0.14em] text-muted">
-                      Image placeholder
-                    </p>
-                    <p className="max-w-lg text-step--1 text-ink-dim">{post.heroImage.alt}</p>
+                {post.heroImage?.src ? (
+                  <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border">
+                    <Image
+                      src={post.heroImage.src}
+                      alt={post.heroImage.alt}
+                      fill
+                      sizes="(min-width: 768px) 672px, 100vw"
+                      loading="lazy"
+                      className="object-cover"
+                    />
                   </div>
+                ) : (
+                  post.heroImage && (
+                    <div className="flex aspect-[21/9] flex-col items-center justify-center gap-1 border-b border-dashed border-border bg-bg/40 px-6 text-center">
+                      <p className="text-step--1 font-semibold uppercase tracking-[0.14em] text-muted">
+                        Image placeholder
+                      </p>
+                      <p className="max-w-lg text-step--1 text-ink-dim">{post.heroImage.alt}</p>
+                    </div>
+                  )
                 )}
                 <div className="p-6">
                   <p className="text-step--1 font-mono text-muted">{formatDate(post.date)}</p>

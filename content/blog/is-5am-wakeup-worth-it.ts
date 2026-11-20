@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: A lone figure sitting quietly with coffee at a kitchen table before sunrise, dark windows, warm interior lamp light, calm and still mood | alt: A person sitting quietly with coffee at a kitchen table before sunrise]
+[HERO_IMAGE: A lone figure sitting quietly with coffee at a kitchen table before sunrise, dark windows, warm interior lamp light, calm and still mood | alt: A person sitting quietly with coffee at a kitchen table before sunrise | src: /blog-images/is-5am-wakeup-worth-it/hero.jpg]
 
 [TLDR: A 5am wake-up genuinely gives you uninterrupted time and fresh willpower, but only if you protect the sleep you'd otherwise cut short — the real question is what wake-up time lets you keep both.]
 
@@ -47,7 +47,7 @@ productivity, no matter how disciplined the attempt.
 
 [QUOTE: An earlier alarm with the same old bedtime is just sleep deprivation with better branding.]
 
-[IMAGE: A tired person yawning while standing over a coffee machine in dim early morning light, candid editorial photography style | alt: A tired person yawning over a coffee machine in early morning light]
+[IMAGE: A tired person yawning while standing over a coffee machine in dim early morning light, candid editorial photography style | alt: A tired person yawning over a coffee machine in early morning light | src: /blog-images/is-5am-wakeup-worth-it/yawning-coffee-machine.jpg]
 
 ## The actual question to ask
 
