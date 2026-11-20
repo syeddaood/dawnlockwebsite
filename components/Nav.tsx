@@ -12,6 +12,7 @@ const LINKS = [
   { href: "/features", label: "Features" },
   { href: "/#proof", label: "Proof" },
   { href: "/#faq", label: "FAQ" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Nav() {

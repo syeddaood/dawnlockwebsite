@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllPosts } from "@/lib/blog";
 
 const SITE_URL = "https://cukkoo.app";
 
@@ -39,5 +40,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       images: FEATURES_APP_SHOTS.map((shot) => `${SITE_URL}/app-shots/${shot}.png`),
     },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: "2026-11-19",
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    ...getAllPosts().map((post) => ({
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: post.date,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
   ];
 }

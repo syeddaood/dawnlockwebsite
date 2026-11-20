@@ -31,6 +31,9 @@ export default function Footer() {
           <Link href="/#faq" className="text-step--1 text-ink-dim hover:text-ink">
             FAQ
           </Link>
+          <Link href="/blog" className="text-step--1 text-ink-dim hover:text-ink">
+            Blog
+          </Link>
         </nav>
 
         <p className="text-step--1 text-muted">
