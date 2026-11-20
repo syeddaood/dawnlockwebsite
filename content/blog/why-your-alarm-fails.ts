@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: A close-up of a hand mid-swipe across a glowing phone alarm screen in a dark bedroom, motion-blurred fingertip suggesting an autopilot gesture, moody blue-to-amber dawn light | alt: A hand swiping to dismiss a phone alarm in a dark bedroom]
+[HERO_IMAGE: A close-up of a hand mid-swipe across a glowing phone alarm screen in a dark bedroom, motion-blurred fingertip suggesting an autopilot gesture, moody blue-to-amber dawn light | alt: A hand swiping to dismiss a phone alarm in a dark bedroom | src: /blog-images/why-your-alarm-fails/hero.jpg]
 
 [TLDR: Snooze and swipe-to-dismiss fail because they take less effort than staying asleep. The fix is forcing real cognitive or physical effort before the alarm stops, and locking the alarm the night before so there's no decision left to make at 6am.]
 
@@ -49,7 +49,7 @@ That's the whole idea behind Cukkoo's wake-up missions — the alarm doesn't
 stop until one of these is actually completed, for real, not performed on
 autopilot.
 
-[IMAGE: A person doing a quick set of squats beside their bed in the early morning light, phone propped up nearby, candid editorial photography style | alt: A person doing squats beside their bed in early morning light]
+[IMAGE: A person doing a quick set of squats beside their bed in the early morning light, phone propped up nearby, candid editorial photography style | alt: A person doing squats beside their bed in early morning light | src: /blog-images/why-your-alarm-fails/squats-by-bed.jpg]
 
 [TIP: Pick a mission that matches how you actually fail mornings — if you blind-tap through dismiss screens, a typing or math mission forces more real attention than a shake gesture would.]
 
