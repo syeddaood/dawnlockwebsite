@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: Morning sunlight streaming through open blinds onto a rumpled bed, dust motes visible in the light beam, warm golden-hour tones | alt: Sunlight streaming through open blinds onto a bed]
+[HERO_IMAGE: Morning sunlight streaming through open blinds onto a rumpled bed, dust motes visible in the light beam, warm golden-hour tones | alt: Sunlight streaming through open blinds onto a bed | src: /blog-images/wake-up-early-without-feeling-groggy/hero.jpg]
 
 [TLDR: Grogginess is mostly a timing problem, not a sleep-amount problem — waking mid-cycle out of deep sleep causes the fog, and the fix is a consistent wake time plus immediate light exposure.]
 
@@ -26,7 +26,7 @@ different. The fix isn't just "more sleep," it's waking up at a better point
 in the cycle, which usually means keeping a consistent sleep and wake time
 so your body's rhythm becomes predictable enough to work with.
 
-[IMAGE: A simple illustrated wave diagram showing a person waking up cleanly during a light-sleep dip versus being jolted awake mid-peak of a deep-sleep wave, clean editorial infographic style | alt: Illustration contrasting waking during light sleep versus deep sleep]
+[IMAGE: A simple illustrated wave diagram showing a person waking up cleanly during a light-sleep dip versus being jolted awake mid-peak of a deep-sleep wave, clean editorial infographic style | alt: Illustration contrasting waking during light sleep versus deep sleep | src: /blog-images/wake-up-early-without-feeling-groggy/light-vs-deep-sleep.jpg]
 
 ## What actually helps
 
@@ -54,7 +54,7 @@ leaving you groggier than if you'd gotten up the first time.
 
 [QUOTE: Snoozing doesn't finish a sleep cycle — it starts a new one you'll get yanked out of again a few minutes later.]
 
-[IMAGE: A person stretching with arms overhead while standing beside an open window, backlit by morning light, candid editorial photography style | alt: A person stretching beside an open window in morning light]
+[IMAGE: A person stretching with arms overhead while standing beside an open window, backlit by morning light, candid editorial photography style | alt: A person stretching beside an open window in morning light | src: /blog-images/wake-up-early-without-feeling-groggy/stretching-at-window.jpg]
 
 ## The actual lever
 
