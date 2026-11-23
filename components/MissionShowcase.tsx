@@ -1,45 +1,54 @@
-import Image from "next/image";
 import Reveal from "./Reveal";
 import { MOTION, staggerDelay } from "@/lib/motion";
+import {
+  MathDemo,
+  TypingDemo,
+  VoiceDemo,
+  MemoryDemo,
+  ShakeDemo,
+  ExerciseDemo,
+  BalanceDemo,
+  ObjectHuntDemo,
+} from "./missions-demo";
 
 const MISSIONS = [
   {
-    image: "/app-shots/math-mission.png",
+    Demo: MathDemo,
     title: "Math",
     body: "Solve three math problems in a row before the alarm will stop — no calculator, no guessing. Get one wrong and it keeps ringing until you get it right.",
   },
   {
-    image: "/app-shots/typing-mission.png",
+    Demo: TypingDemo,
     title: "Typing",
     body: "Retype an on-screen phrase exactly, typos and all, while the app tracks your accuracy and mistakes live. Enough friction to get your brain working before it'll let you silence it.",
   },
   {
-    image: "/app-shots/voice-mission.png",
+    Demo: VoiceDemo,
     title: "Voice",
     body: "Say a phrase out loud and the app checks it against an 80% match before it'll stop ringing. No typing — just prove you can speak in full sentences.",
   },
   {
-    image: "/app-shots/memory-mission.png",
+    Demo: MemoryDemo,
     title: "Memory",
     body: "Clear a memory-match grid — pick 4, 6, or 8 pairs depending on how much of a fight you're up for. Moves and time are tracked, so there's no half-finishing it back to sleep.",
   },
   {
-    image: "/app-shots/shake-mission.png",
+    Demo: ShakeDemo,
     title: "Shake",
     body: "Physically shake the phone until the counter hits its target — a motionless hand can't fake it. The most physical of the missions, by design.",
   },
   {
-    image: "/app-shots/exercise-mission.png",
+    Demo: ExerciseDemo,
     title: "Exercise",
     body: "The camera counts real reps — squats, jumping jacks, or push-ups — and won't dismiss the alarm until you've actually done them. Pose tracking runs entirely on-device; the feed is never uploaded.",
   },
   {
-    image: "/app-shots/balance-mission.png",
+    Demo: BalanceDemo,
     title: "Balance",
     body: "Hold the phone level and still for a stretch you choose — 5, 10, or 20 seconds — and the timer resets the instant you move too much. The one mission where staying still proves you're awake.",
   },
   {
-    image: "/app-shots/object-hunt-mission.png",
+    Demo: ObjectHuntDemo,
     title: "Photo",
     body: "Photograph a random object the app names on the spot, or step outside and snap the sky or street around you. Recognition runs entirely on-device — the photo itself never leaves your phone.",
   },
@@ -84,14 +93,8 @@ export default function MissionShowcase() {
                   (i % 2 === 1 ? " md:flex-row-reverse" : "")
                 }
               >
-                <div className="relative aspect-[560/1073] w-[220px] flex-shrink-0 overflow-hidden rounded-[1.8rem] border border-white/10 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.55)] sm:w-[240px] md:w-[260px]">
-                  <Image
-                    src={mission.image}
-                    alt={`Cukkoo ${mission.title} wake-up mission screen`}
-                    fill
-                    sizes="(min-width: 768px) 260px, 220px"
-                    className="object-cover"
-                  />
+                <div className="flex-shrink-0">
+                  <mission.Demo />
                 </div>
                 <div className="max-w-md">
                   <p className="font-mono text-step--1 text-muted">
