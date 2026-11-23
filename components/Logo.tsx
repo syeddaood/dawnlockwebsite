@@ -5,7 +5,8 @@ export default function Logo({ size = 28 }: { size?: number }) {
       height={size}
       viewBox="0 0 32 32"
       fill="none"
-      aria-hidden="true"
+      role="img"
+      aria-label="Cukkoo alarm app"
     >
       {/* progress ring: long orange arc (wake streak) + slate arc, split by a mint marker dot */}
       <path

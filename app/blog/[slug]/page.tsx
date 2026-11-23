@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPost } from "@/lib/posts";
-import { renderBlogBody } from "@/lib/blog-content";
+import { renderBlogBody, extractHeroImage } from "@/lib/blog-content";
 import BlogRichContent from "@/components/BlogRichContent";
+import BlogPostStructuredData from "@/components/BlogPostStructuredData";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -21,7 +22,7 @@ export async function generateMetadata({
   const { title, description, date } = post.metadata;
 
   return {
-    title: `${title} — Cukkoo`,
+    title: `${title} — Cukkoo Alarm Clock`,
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -58,9 +59,17 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const html = renderBlogBody(post.body);
+  const heroImage = extractHeroImage(post.body);
 
   return (
     <article className="relative bg-bg pb-24 pt-32 md:pt-40">
+      <BlogPostStructuredData
+        slug={slug}
+        title={post.metadata.title}
+        description={post.metadata.description}
+        date={post.metadata.date}
+        imageSrc={heroImage?.src}
+      />
       <div className="mx-auto max-w-2xl px-5">
         <p className="text-step--1 font-mono text-muted">{formatDate(post.metadata.date)}</p>
         <h1 className="mt-3 font-display text-step-3 font-bold text-ink">

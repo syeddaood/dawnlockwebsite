@@ -5,9 +5,9 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const TITLE = "Cukkoo: Alarm Clock App for Heavy Sleepers (No Snooze)";
+const TITLE = "Cukkoo Alarm Clock: No-Snooze App for Heavy Sleepers";
 const DESCRIPTION =
-  "Cukkoo is the Android alarm clock that locks itself and won't stop ringing until you complete a real wake-up mission. No snooze, no dismiss button, no excuses.";
+  "Cukkoo is the alarm clock that locks itself and won't stop ringing until you complete a real wake-up mission. No snooze, no dismiss button, no excuses. Coming to iOS and Android.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cukkoo.app"),
@@ -20,13 +20,16 @@ export const metadata: Metadata = {
     "alarm clock app that forces you to wake up",
     "wake up mission alarm app",
     "commitment device alarm app",
-    "android alarm app that can't be turned off",
+    "alarm app that can't be turned off",
     "alarm clock with challenges to turn off",
     "alarm clock app for android",
+    "alarm clock app for iphone",
     "best alarm clock app for android",
+    "best alarm clock app for iphone",
     "Alarmy alternative",
     "shake to stop alarm app",
     "reliable alarm app android",
+    "reliable alarm app ios",
     "alarm app that forces you out of bed",
     "alarm app with puzzles",
   ],

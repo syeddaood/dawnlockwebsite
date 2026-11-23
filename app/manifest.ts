@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Cukkoo: Alarm Clock App for Heavy Sleepers",
     short_name: "Cukkoo",
     description:
-      "The Android alarm clock app that locks itself and won't stop ringing until you solve a real wake-up mission — no snooze, no dismiss.",
+      "The alarm clock app that locks itself and won't stop ringing until you solve a real wake-up mission — no snooze, no dismiss.",
     start_url: "/",
     display: "standalone",
     background_color: "#0B0A10",

@@ -21,8 +21,8 @@ export default function WaitlistSection() {
             Set an alarm you can&apos;t talk your way out of.
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-step-0 text-ink-dim">
-            Cukkoo is pre-launch on Android. Join the waitlist for early
-            access — no spam, just one email when it&apos;s ready.
+            Cukkoo is pre-launch on iOS and Android. Join the waitlist for
+            early access — no spam, just one email when it&apos;s ready.
           </p>
         </Reveal>
 

@@ -60,7 +60,7 @@ export default function MissionShowcase() {
             The missions
           </p>
           <h1 className="mt-3 font-display text-step-3 font-bold text-ink">
-            Every wake-up mission, from the real app.
+            Cukkoo alarm clock: every wake-up mission, from the real app.
           </h1>
           <p className="mt-4 text-step-0 text-ink-dim">
             Eight ways to prove you&apos;re actually awake — pick one per

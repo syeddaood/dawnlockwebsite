@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import MissionShowcase from "@/components/MissionShowcase";
 
-const TITLE = "Wake-Up Missions — Cukkoo";
+const TITLE = "Cukkoo Alarm Clock — Wake-Up Missions";
 const DESCRIPTION =
   "See all eight Cukkoo wake-up missions — math, typing, voice, memory, shake, exercise, balance, and photo — with real screenshots from the app.";
 

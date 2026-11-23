@@ -17,7 +17,7 @@ export const FAQS = [
   },
   {
     q: "What platforms does Cukkoo support?",
-    a: "Cukkoo is built for Android, where we can engineer the deep, reliable alarm scheduling this concept depends on.",
+    a: "Cukkoo is built for both iOS and Android, so you can use it no matter which phone you carry.",
   },
   {
     q: "When can I get it?",

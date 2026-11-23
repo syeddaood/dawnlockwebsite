@@ -7,7 +7,7 @@ import { MOTION, staggerDelay } from "@/lib/motion";
 
 export const dynamic = "force-static";
 
-const TITLE = "Blog — Cukkoo";
+const TITLE = "Cukkoo Alarm Clock — Blog";
 const DESCRIPTION =
   "Notes on wake-up habits, alarm design, and why most alarm clocks fail to get people out of bed.";
 
@@ -56,7 +56,7 @@ export default function BlogIndexPage() {
             The blog
           </p>
           <h1 className="mt-3 font-display text-step-3 font-bold text-ink">
-            Notes on waking up.
+            Cukkoo alarm clock: notes on waking up.
           </h1>
         </Reveal>
 

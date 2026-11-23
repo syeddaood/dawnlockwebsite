@@ -38,7 +38,7 @@ export default function Hero() {
         </motion.span>
 
         <h1 className="mx-auto mt-5 max-w-2xl text-balance font-display text-step-hero font-bold leading-[0.95] tracking-tight text-ink">
-          Solve it. Play it. Beat it. Get up!
+          Cukkoo alarm clock. Solve it. Play it. Beat it. Get up!
         </h1>
 
         <motion.p
@@ -48,8 +48,8 @@ export default function Hero() {
           className="mx-auto mt-6 max-w-xl text-step-1 text-ink-dim"
         >
           No snooze, no dismiss — only a real wake-up mission stops the
-          ring. Cukkoo removes the escape hatches you reach for at 6am,
-          while you&apos;re still too groggy to be trusted.
+          ring. The Cukkoo app removes the escape hatches you reach for at
+          6am, while you&apos;re still too groggy to be trusted.
         </motion.p>
 
         <motion.div

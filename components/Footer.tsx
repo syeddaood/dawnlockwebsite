@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Logo from "./Logo";
 
+// TODO: no social profile URLs exist yet. Once there are real ones, add
+// lucide-react icon imports above and a list like:
+// const SOCIAL_LINKS = [
+//   { href: "https://twitter.com/cukkooapp", label: "Cukkoo on X (Twitter)", icon: Twitter },
+//   { href: "https://instagram.com/cukkooapp", label: "Cukkoo on Instagram", icon: Instagram },
+// ];
+// then render the commented-out <ul> below.
+
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-bg py-12">
@@ -10,7 +18,7 @@ export default function Footer() {
           <div>
             <p className="font-display font-bold text-ink">Cukkoo</p>
             <p className="text-step--1 text-muted">
-              Solve it. Play it. Beat it. Get up!
+              Cukkoo, the no-snooze alarm app for heavy sleepers.
             </p>
           </div>
         </div>
@@ -36,8 +44,26 @@ export default function Footer() {
           </Link>
         </nav>
 
+        {/* TODO: no social profile URLs yet — once they exist, uncomment:
+        <ul className="flex items-center gap-4">
+          {SOCIAL_LINKS.map(({ href, label, icon: Icon }) => (
+            <li key={href}>
+              <a
+                href={href}
+                target="_blank"
+                rel="me noopener"
+                aria-label={label}
+                className="text-ink-dim transition hover:text-ink"
+              >
+                <Icon className="h-5 w-5" aria-hidden="true" />
+              </a>
+            </li>
+          ))}
+        </ul>
+        */}
+
         <p className="text-step--1 text-muted">
-          © {new Date().getFullYear()} Cukkoo. Built for Android.
+          © {new Date().getFullYear()} Cukkoo. Built for iOS and Android — coming soon.
         </p>
       </div>
     </footer>
