@@ -19,7 +19,7 @@ const PLAYS: [number, number][] = [
   [10, 5],
 ];
 
-async function run({ $, $$, wait }: RunArgs) {
+async function run({ $, $$, wait, isVisible }: RunArgs) {
   const cs = $$(`.${styles.mc}`);
   cs.forEach((c) => (c.className = styles.mc));
   let mv = 0;
@@ -33,6 +33,7 @@ async function run({ $, $$, wait }: RunArgs) {
   if (prEl) prEl.textContent = "0/6";
 
   const tick = window.setInterval(() => {
+    if (!isVisible()) return;
     const s = Math.floor((performance.now() - t0) / 1000);
     if (tmEl) tmEl.textContent = `0:${String(s).padStart(2, "0")}`;
   }, 250);

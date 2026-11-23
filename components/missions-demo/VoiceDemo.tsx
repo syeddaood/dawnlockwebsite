@@ -8,7 +8,7 @@ import styles from "./demoStyles.module.css";
 const VP = "I am awake, I am ready, and today is mine.".split(" ");
 const WAVE_BARS = 26;
 
-async function run({ $, $$, wait }: RunArgs) {
+async function run({ $, $$, wait, isVisible }: RunArgs) {
   const ws = $$(`.${styles.ref} span`);
   const bars = $$(`.${styles.wave} i`);
   const mic = $(`.${styles.mic}`);
@@ -28,6 +28,7 @@ async function run({ $, $$, wait }: RunArgs) {
   if (st) st.textContent = "Tap the mic and say the phrase";
 
   const anim = window.setInterval(() => {
+    if (!isVisible()) return;
     bars.forEach((b, i) => {
       b.style.height = on ? `${4 + Math.random() * 22 * Math.sin(((i + 1) / 27) * Math.PI)}px` : "3px";
     });

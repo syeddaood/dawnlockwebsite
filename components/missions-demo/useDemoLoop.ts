@@ -9,6 +9,10 @@ export type RunArgs = {
   $$: <T extends Element = HTMLElement>(sel: string) => T[];
   wait: (ms: number) => Promise<boolean>;
   done: () => Promise<void>;
+  /** True while the phone mockup is on screen. Lets a demo's own
+   *  setInterval (e.g. an elapsed-time tick) skip DOM writes while
+   *  scrolled out of view, instead of updating forever in the background. */
+  isVisible: () => boolean;
 };
 
 /**
@@ -17,6 +21,11 @@ export type RunArgs = {
  * - plays only while the element is on screen (IntersectionObserver)
  * - never starts for prefers-reduced-motion
  * - loops forever until the component unmounts, then stops cleanly
+ *
+ * While off screen, `wait()` suspends on a promise resolved by the
+ * IntersectionObserver callback itself — no timers fire at all until the
+ * element is visible again. This matters because several of these demos
+ * run concurrently on one page, so a busy-poll per hidden instance adds up.
  */
 export function useDemoLoop(
   rootRef: RefObject<HTMLDivElement | null>,
@@ -32,25 +41,48 @@ export function useDemoLoop(
 
     let cancelled = false;
     let visible = false;
+    let notifyVisible: (() => void) | null = null;
 
     const observer = new IntersectionObserver(
       (entries) => {
         visible = entries[0]?.isIntersecting ?? false;
+        if (visible && notifyVisible) {
+          const fn = notifyVisible;
+          notifyVisible = null;
+          fn();
+        }
       },
       { threshold: 0.15 }
     );
     observer.observe(el);
+
+    const waitUntilVisible = () => {
+      if (visible || cancelled) return Promise.resolve();
+      return new Promise<void>((resolve) => {
+        notifyVisible = resolve;
+      });
+    };
 
     const $ = <T extends Element = HTMLElement>(sel: string) =>
       el.querySelector<T>(sel);
     const $$ = <T extends Element = HTMLElement>(sel: string) =>
       Array.from(el.querySelectorAll<T>(sel));
 
-    // Returns false if the wait was cut short by unmount, so callers can bail.
+    // Counts down `ms` of wall-clock time while visible, pausing (with zero
+    // timers) whenever scrolled off screen. Returns false if cut short by unmount.
     const wait = async (ms: number) => {
-      const end = performance.now() + ms;
-      while (!cancelled && (performance.now() < end || !visible)) {
-        await new Promise((r) => setTimeout(r, Math.min(60, ms) || 16));
+      let remaining = ms;
+      const step = Math.min(60, ms) || 16;
+      while (!cancelled) {
+        if (!visible) {
+          await waitUntilVisible();
+          continue;
+        }
+        if (remaining <= 0) break;
+        const chunk = Math.min(remaining, step);
+        const start = performance.now();
+        await new Promise((r) => setTimeout(r, chunk));
+        remaining -= performance.now() - start;
       }
       return !cancelled;
     };
@@ -63,15 +95,18 @@ export function useDemoLoop(
       await wait(500);
     };
 
+    const isVisible = () => visible;
+
     (async () => {
       while (!cancelled) {
-        await run({ el, $, $$, wait, done });
+        await run({ el, $, $$, wait, done, isVisible });
       }
     })();
 
     return () => {
       cancelled = true;
       observer.disconnect();
+      notifyVisible?.();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rootRef]);

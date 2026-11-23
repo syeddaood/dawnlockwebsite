@@ -7,7 +7,7 @@ import styles from "./demoStyles.module.css";
 
 const PHRASE = "The early bird catches the worm";
 
-async function run({ $, $$, wait }: RunArgs) {
+async function run({ $, $$, wait, isVisible }: RunArgs) {
   const refs = $$(`.${styles.ref} span`);
   const tv = $('[data-demo="tv"]');
   const barI = $(`.${styles.bar} i`);
@@ -35,6 +35,7 @@ async function run({ $, $$, wait }: RunArgs) {
   };
 
   const tick = window.setInterval(() => {
+    if (!isVisible()) return;
     const s = Math.floor((performance.now() - t0) / 1000);
     if (el) el.textContent = `0:${String(s).padStart(2, "0")}`;
   }, 250);
