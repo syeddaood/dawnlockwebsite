@@ -42,6 +42,9 @@ export default function Footer() {
           <Link href="/blog" className="text-step--1 text-ink-dim hover:text-ink">
             Blog
           </Link>
+          <Link href="/privacy" className="text-step--1 text-ink-dim hover:text-ink">
+            Privacy
+          </Link>
         </nav>
 
         {/* TODO: no social profile URLs yet — once they exist, uncomment:
