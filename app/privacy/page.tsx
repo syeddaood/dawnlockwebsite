@@ -95,13 +95,9 @@ export default function PrivacyPage() {
           </p>
 
           <h2>Contact us</h2>
-          {/* TODO: no verified contact email exists yet for this project. Replace
-              the line below with a real, monitored address (e.g. privacy@cukkoo.app)
-              before relying on this page for GDPR/CCPA requests or App Store /
-              Play Store submission — both require a working contact method. */}
           <p>
             Questions about this policy or your data? Contact us at{" "}
-            <strong>[ADD CONTACT EMAIL]</strong>.
+            <a href="mailto:support@cukkoo.app">support@cukkoo.app</a>.
           </p>
         </div>
       </div>
