@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export const body = `
-[HERO_IMAGE: Three phones side by side on a dark nightstand, each showing a different alarm app mission screen, early morning light | alt: Three phones on a nightstand, each showing a different wake-up mission alarm app]
+[HERO_IMAGE: Three phones side by side on a dark nightstand, each showing a different alarm app mission screen, early morning light | alt: Three phones on a nightstand showing a Math Mission, Photo Mission, and Shake Mission screen | src: /blog-images/cukkoo-vs-alarmy-wayk/hero.png]
 
 [TLDR: Alarmy and Wayk both use wake-up missions, and that part works. What's actually different about Cukkoo is Goal Lock — the alarm itself gets locked hours before it rings, so there's no editing or disabling it in a weak 6am moment — plus camera/mic missions that are verified entirely on-device.]
 
