@@ -1,0 +1,22 @@
+# Cukkoo
+
+> Cukkoo is an alarm clock app for iOS and Android, built for heavy sleepers who can turn off a normal alarm without ever waking up. Instead of a snooze or dismiss button, each alarm can be locked hours in advance (Goal Lock) and only turns off once you complete a real wake-up mission.
+
+Cukkoo is currently pre-launch; visitors can join a waitlist for early access. Wake-up missions include math problems, typing or speaking a phrase, a memory game, shaking the phone, a short exercise set, holding the phone steady (balance), and photographing a specific real-world object. Camera and microphone data used to verify a mission is processed entirely on-device and is never uploaded, logged, or seen by analytics. Alarms are engineered to keep ringing through Doze mode, aggressive battery optimization, Do Not Disturb, and a force-closed app.
+
+## Site
+
+- [Homepage](https://cukkoo.app/): Product overview, how Goal Lock works, mission types, FAQ, and the early-access waitlist.
+- [Features](https://cukkoo.app/features): Live, animated demos of all eight wake-up missions (math, typing, voice, memory, shake, exercise, balance, photo).
+- [Blog](https://cukkoo.app/blog): Articles on sleep science, waking up, and alarm habits.
+- [Privacy Policy](https://cukkoo.app/privacy): What data Cukkoo collects (a waitlist email) and what it explicitly does not (no analytics, cookies, or uploaded camera/mic data).
+
+## Blog posts
+
+- [Why your alarm clock keeps failing you](https://cukkoo.app/blog/why-your-alarm-fails): Snooze buttons and swipe-to-dismiss don't fail by accident — they're designed to be easy to beat at 6am. Here's what actually works.
+- [Why you keep hitting snooze, and how to stop](https://cukkoo.app/blog/why-you-keep-hitting-snooze): Snoozing isn't a lack of discipline — it's a half-asleep brain taking the path of least resistance. Here's why it happens and what actually breaks the habit.
+- [The science of sleep cycles: why waking at the right moment matters](https://cukkoo.app/blog/science-of-sleep-cycles): Sleep isn't one long flat state — it's a repeating cycle, and where in that cycle your alarm catches you matters more than how many hours you slept.
+- [How much sleep you actually need at different ages](https://cukkoo.app/blog/how-much-sleep-you-need-by-age): "Eight hours" isn't a universal rule — how much sleep you need changes significantly across childhood, adolescence, and adulthood.
+- [What sleep inertia is and how to shake it off faster](https://cukkoo.app/blog/what-is-sleep-inertia): That heavy, foggy feeling right after waking up has a name — sleep inertia — and a few genuine ways to shorten it.
+- [Is waking up at 5 AM worth it?](https://cukkoo.app/blog/is-5am-wakeup-worth-it): 5am wake-ups get sold as a productivity cheat code. The honest answer is: it depends what you're actually optimizing for.
+- [How to wake up early without feeling groggy](https://cukkoo.app/blog/wake-up-early-without-feeling-groggy): Waking up earlier isn't the hard part — waking up clear-headed is. Here's what actually reduces morning grogginess, and what doesn't.
