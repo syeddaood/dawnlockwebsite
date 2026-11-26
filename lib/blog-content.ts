@@ -193,8 +193,14 @@ function renderBarChart(spec: ChartSpec): string {
 
 function renderBlock(block: Block): string {
   switch (block.type) {
-    case "markdown":
-      return marked.parse(block.content, { async: false }) as string;
+    case "markdown": {
+      const html = marked.parse(block.content, { async: false }) as string;
+      // A wide table (e.g. a feature-comparison table) would otherwise force
+      // the whole page to scroll horizontally on narrow viewports.
+      return html
+        .replace(/<table>/g, '<div class="blog-table-wrap"><table>')
+        .replace(/<\/table>/g, "</table></div>");
+    }
     case "hero_image":
       return renderImageBlock(block, true);
     case "image":

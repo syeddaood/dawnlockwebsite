@@ -5,6 +5,7 @@ import * as scienceOfSleepCycles from "@/content/blog/science-of-sleep-cycles";
 import * as howMuchSleepYouNeedByAge from "@/content/blog/how-much-sleep-you-need-by-age";
 import * as whatIsSleepInertia from "@/content/blog/what-is-sleep-inertia";
 import * as is5amWakeupWorthIt from "@/content/blog/is-5am-wakeup-worth-it";
+import * as cukkooVsAlarmyWayk from "@/content/blog/cukkoo-vs-alarmy-wayk";
 import { extractHeroImage, extractImageSrcs, type HeroImage } from "@/lib/blog-content";
 
 export type PostMeta = {
@@ -26,6 +27,7 @@ export const POSTS: Record<string, PostModule> = {
   "how-much-sleep-you-need-by-age": howMuchSleepYouNeedByAge,
   "what-is-sleep-inertia": whatIsSleepInertia,
   "is-5am-wakeup-worth-it": is5amWakeupWorthIt,
+  "cukkoo-vs-alarmy-wayk": cukkooVsAlarmyWayk,
 };
 
 export function getAllPosts(): (PostMeta & {

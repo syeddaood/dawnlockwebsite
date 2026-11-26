@@ -202,8 +202,12 @@ button {
   color: #f2b84b;
 }
 
-.blog-content table {
+.blog-content .blog-table-wrap {
   margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.blog-content table {
   width: 100%;
   border-collapse: collapse;
   font-size: var(--step--1);
